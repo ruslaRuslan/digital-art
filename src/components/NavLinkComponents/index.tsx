@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from "./index.module.css";
+import styles from "../../styles.module.css";
 
 interface NavLinkComponentsProps {
   children: any;
