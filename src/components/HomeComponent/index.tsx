@@ -9,8 +9,8 @@ const HomeComponent = () => {
           marginTop: 8,
         }}
       >
-        <Grid container spacing={3} justifyContent="center">
-          <Grid item lg={6}>
+        <Grid container justifyContent="space-between">
+          <Grid item lg={6} md={6}>
             <h1 className="text-7xl font-semibold">{Data.DiscoverTitle}</h1>
             <p className="mt-8 text-xl">{Data.description}</p>
             <button className="flex items-center mt-7 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ... p-3 rounded-2xl">
@@ -28,7 +28,7 @@ const HomeComponent = () => {
               })}
             </div>
           </Grid>
-          <Grid item lg={6}>
+          <Grid item lg={6} md={6} display="flex" justifyContent="end">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <img src={Data.rocetKosmos} />
               <div className="px-6 py-4">
