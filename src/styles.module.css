@@ -2,3 +2,31 @@
   background-color: #a259ff;
   border-radius: "10%";
 }
+
+.linkforMobile {
+  background-color: #a259ff;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .hideXsStylesModule {
+    display: none;
+  }
+}
+
+.headerHover {
+  background-color: #a259ff;
+  color: #fff;
+}
+
+@media (max-width: 948px) {
+  .trendingMt {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .custom {
+    padding-left: 15px;
+  }
+}

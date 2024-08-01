@@ -4,8 +4,9 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import NavLinkComponents from "../NavLinkComponents";
-
-export default function Example() {
+import NavLinkForPhoneComponents from "../NavLinkForPhoneComponents";
+import styles from "../../styles.module.css";
+export default function Example(): JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -23,7 +24,7 @@ export default function Example() {
             <p className="pt-1">{Data.MarketplaceTitle}</p>
           </div>
           <div className="min-[0px]:hidden md:hidden lg:block sm:hidden">
-            <div className="flex gap-10">
+            <div className="flex gap-10 relative">
               {Data.headerDates.map(({ id, title, href, images }) => {
                 return (
                   <NavLinkComponents key={id} to={href}>
@@ -84,25 +85,22 @@ export default function Example() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 "
             >
               <XMarkIcon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="py-6">
+              <div className=" flex flex-col mt-7">
                 {Data.headerDates.map(({ id, title, href, images }) => {
                   return (
-                    <div key={id} className="flex items-center gap-1">
-                      <img src={images} />
-                      <a
-                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7"
-                        href={href}
-                      >
-                        {title}
-                      </a>
-                    </div>
+                    <NavLinkForPhoneComponents key={id} to={href}>
+                      <div className="flex">
+                        <img src={images} />
+                        <p>{title}</p>
+                      </div>
+                    </NavLinkForPhoneComponents>
                   );
                 })}
               </div>

@@ -12,8 +12,6 @@
       "images": "/images/user.svg"
     }
   ],
-  "DiscoverTitle": "Discover Digital Art & Collect NFTs",
-  "description": "NFT marketplace UI created with Anima for Figma. Collect, buy, and sell art from more than 20k NFT artists.",
   "statistics": [
     {
       "id": 1,
@@ -31,8 +29,113 @@
       "count": "240k+"
     }
   ],
-  "rocetKosmos": "/images/rocketLaunch2.svg",
-  "SpaceWalking": "Space Walking",
-  "animakidImage": "/images/animakid.svg",
-  "animakid": "Animakid"
+  "trendingCollection": [
+    {
+      "id": 1,
+      "collections": "/images/animals.svg",
+      "title": "DSGN Animals",
+      "avatar": "/images/mrFox.svg",
+      "avatarName": "MrFox"
+    },
+    {
+      "id": 2,
+      "collections": "/images/mushrooms.svg",
+      "title": "Magic Mushrooms",
+      "avatar": "/images/shoormie.svg",
+      "avatarName": "Shroomie"
+    },
+    {
+      "id": 3,
+      "collections": "/images/machines.svg",
+      "title": "Disco Machines",
+      "avatar": "/images/beKind2Robots.svg",
+      "avatarName": "BeKind2Robots"
+    }
+  ],
+  "TopCreators": [
+    {
+      "id": 1,
+      "count": 1,
+      "avatar": "/images/keepitreal.svg",
+      "username": "Keepitreal",
+      "price": 34.53
+    },
+    {
+      "id": 2,
+      "count": 2,
+      "avatar": "/images/digiLab.svg",
+      "username": "DigiLab",
+      "price": 34.53
+    },
+    {
+      "id": 3,
+      "count": 3,
+      "avatar": "/images/gravityOne.svg",
+      "username": "GravityOne",
+      "price": 34.53
+    },
+    {
+      "id": 4,
+      "count": 4,
+      "avatar": "/images/juanie.svg",
+      "username": "Juanie",
+      "price": 34.53
+    },
+    {
+      "id": 5,
+      "count": 5,
+      "avatar": "/images/blueWhale.svg",
+      "username": "BlueWhale",
+      "price": 34.53
+    },
+    {
+      "id": 6,
+      "count": 6,
+      "avatar": "/images/foxMister.png",
+      "username": "Mr fox",
+      "price": 34.53
+    },
+    {
+      "id": 7,
+      "count": 7,
+      "avatar": "/images/shroomie2.svg",
+      "username": "Shroomie",
+      "price": 34.53
+    },
+    {
+      "id": 8,
+      "count": 8,
+      "avatar": "/images/robotica.svg",
+      "username": "Robotica",
+      "price": 34.53
+    },
+    {
+      "id": 9,
+      "count": 9,
+      "avatar": "/images/rustyRobot2.svg",
+      "username": "RustyRobot",
+      "price": 34.53
+    },
+    {
+      "id": 10,
+      "count": 10,
+      "avatar": "/images/animakid2.svg",
+      "username": "Animakid",
+      "price": 34.53
+    },
+    {
+      "id": 11,
+      "count": 11,
+      "avatar": "/images/dotgu.svg",
+      "username": "Dotgu",
+      "price": 34.53
+    },
+    {
+      "id": 12,
+      "count": 12,
+      "avatar": "/images/ghiblier.svg",
+      "username": "Ghiblier",
+      "price": 34.53
+    }
+  ]
 }
