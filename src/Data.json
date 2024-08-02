@@ -187,5 +187,40 @@
       "iconHover": "/images/categoryhoverIcon8.svg",
       "title": "Virtual Worlds"
     }
+  ],
+  "discoverMore": [
+    {
+      "id": 1,
+      "images": "/images/discoverMore.svg",
+      "title": "Distant Galaxy",
+      "icons": "/images/icon.svg",
+      "user": "MoonDancer",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.72,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 2,
+      "images": "/images/discoverMore2.svg",
+      "title": "Life On Edena",
+      "icons": "/images/icon2.svg",
+      "user": "NebulaKid",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.81,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 3,
+      "images": "/images/discoverMore3.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    }
   ]
 }

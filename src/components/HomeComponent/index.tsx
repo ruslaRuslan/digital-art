@@ -206,47 +206,121 @@ const HomeComponent = () => {
           {Data.categories.map(({ id, images, iconHover, title }) => {
             return (
               <div
-                style={{
-                  backgroundColor: "#3B3B3B",
-                  borderRadius: 25,
-                }}
-                className="mt-8"
+                key={id}
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
               >
                 <div
-                  key={id}
-                  className="relative w-full  group  rounded-tl-[inherit] rounded-tr-[inherit]"
+                  style={{
+                    backgroundColor: "#3B3B3B",
+                    borderRadius: 25,
+                  }}
+                  className="mt-8"
                 >
-                  <img
-                    src={images}
-                    className="w-full object-cover rounded-tl-[inherit] rounded-tr-[inherit]"
-                  />
                   <div
-                    style={{
-                      backdropFilter: "blur(5px)",
-                    }}
-                    className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl font-bold opacity-0 group-hover:opacity-100  duration-1000   rounded-tl-[inherit] rounded-tr-[inherit]"
+                    key={id}
+                    className="relative w-full  group  rounded-tl-[inherit] rounded-tr-[inherit]"
                   >
                     <img
-                      className=" rounded-tl-[inherit] rounded-tr-[inherit]"
-                      src={iconHover}
+                      src={images}
+                      className="w-full object-cover rounded-tl-[inherit] rounded-tr-[inherit]"
                     />
+                    <div
+                      style={{
+                        backdropFilter: "blur(5px)",
+                      }}
+                      className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl font-bold opacity-0 group-hover:opacity-100  duration-1000   rounded-tl-[inherit] rounded-tr-[inherit]"
+                    >
+                      <img
+                        className=" rounded-tl-[inherit] rounded-tr-[inherit]"
+                        src={iconHover}
+                      />
+                    </div>
                   </div>
+                  <p
+                    style={{
+                      fontSize: "22px",
+                      fontWeight: 600,
+                      paddingTop: 12,
+                      paddingBottom: 18,
+                      paddingLeft: "18px",
+                    }}
+                    className={styles.text16}
+                  >
+                    {title}
+                  </p>
                 </div>
-                <p
-                  style={{
-                    fontSize: "22px",
-                    fontWeight: 600,
-                    marginTop: 12,
-                    marginBottom: 19,
-                    marginLeft: "18px",
-                  }}
-                  className={styles.text16}
-                >
-                  {title}
-                </p>
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
+        <div className="flex items-end justify-between mb-5">
+          <div>
+            <h2 className="font-bold text-4xl">Discover More NFTs</h2>
+            <p className="mt-3 text-xl">Explore new trending NFTs</p>
+          </div>
+          <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
+            <img src="/images/eye.svg" />
+            <p className="font-semibold">See All</p>
+          </button>
+        </div>
+        <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-16">
+          {Data.discoverMore.map(
+            ({
+              id,
+              images,
+              title,
+              icons,
+              user,
+              wordPrice,
+              rates,
+              price,
+              wt,
+            }) => {
+              return (
+                <div
+                  key={id}
+                  data-aos="zoom-out-down"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                >
+                  <div
+                    style={{
+                      backgroundColor: "#3B3B3B",
+                      borderRadius: 20,
+                    }}
+                    className="mt-8"
+                  >
+                    <img src={images} className="w-full object-cover" />
+                    <div className="p-5">
+                      <p className="text-xl	font-semibold">{title}</p>
+                      <div className="flex items-end gap-3">
+                        <img className="mt-4" src={icons} />
+                        <p>{user}</p>
+                      </div>
+                      <div
+                        style={{
+                          color: "#858584",
+                        }}
+                        className="flex items-center justify-between mt-3"
+                      >
+                        <p>{wordPrice}</p>
+                        <p>{rates}</p>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <p>{price} ETH</p>
+                        <p>{wt}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+          )}
         </div>
       </section>
     </>
