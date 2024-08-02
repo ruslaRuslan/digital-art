@@ -1,4 +1,3 @@
-"use client";
 import Data from "../../Data.json";
 import styles from "../../styles.module.css";
 import { motion } from "framer-motion";
@@ -6,7 +5,7 @@ import TrendingCollections from "../TrendingCollections";
 const HomeComponent = () => {
   return (
     <>
-      <div className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 ">
+      <header className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 ">
         <div className="flex items-center">
           <div className="grid md:grid-cols-2">
             <motion.div
@@ -31,7 +30,6 @@ const HomeComponent = () => {
                 NFT marketplace UI created with Anima for Figma. Collect, buy,
                 and sell art from more than 20k NFT artists.
               </p>
-
               <div className={styles.hideXsStylesModule}>
                 <button className="flex items-center mt-7 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ... p-3 rounded-2xl">
                   <img src="/images/rocketLaunch.svg" />
@@ -67,7 +65,14 @@ const HomeComponent = () => {
             >
               <div className="mx-0 mb-1 sm:mb-4 ">
                 <div className="max-w-sm rounded-xl overflow-hidden shadow-lg">
-                  <img src="/images/rocketLaunch2.svg" />
+                  <div className="relative overflow-hidden bg-cover ">
+                    <img
+                      src="/images/rocketLaunch2.svg"
+                      className=" transition duration-300 ease-in-out hover:scale-110 "
+                      alt="Louvre"
+                    />
+                  </div>
+
                   <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">
                       <p>Space Walking</p>
@@ -98,7 +103,7 @@ const HomeComponent = () => {
             </motion.div>
           </div>
         </div>
-      </div>
+      </header>
 
       <section className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
         <div className="mt-1 mb-9 pl-16">
@@ -125,52 +130,59 @@ const HomeComponent = () => {
         <div className="container justify-center m-auto grid lg:grid-cols-4 lg:grid-rows-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 ">
           {Data.TopCreators.map(({ id, count, avatar, username, price }) => {
             return (
-              <div key={id} className="flex hover:scale-110 duration-500">
-                <div
-                  className="m-6 xs:w-[100%] md:w-[100%]"
-                  style={{
-                    maxWidth: "100%",
-                    background: "#3B3B3B",
-                    borderRadius: 17,
-                  }}
-                >
-                  <div className="mt-4  relative">
-                    <div className="absolute ml-2">
-                      <span
-                        style={{
-                          backgroundColor: "#2B2B2B",
-                          borderRadius: "50%",
-                          paddingRight: 16,
-                          paddingLeft: 16,
-                          paddingTop: 6,
-                          paddingBottom: 6,
-                          color: "#858584",
-                        }}
-                      >
+              <div
+                key={id}
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div className="flex hover:scale-110 duration-500">
+                  <div
+                    className="m-6 xs:w-[100%] md:w-[100%]"
+                    style={{
+                      width: "100%",
+                      background: "#3B3B3B",
+                      borderRadius: 17,
+                    }}
+                  >
+                    <div className="mt-4  relative">
+                      <div className="absolute ml-2">
                         <span
-                          className=" absolute"
                           style={{
-                            left: 9,
+                            backgroundColor: "#2B2B2B",
+                            borderRadius: "50%",
+                            paddingRight: 16,
+                            paddingLeft: 16,
+                            paddingTop: 6,
+                            paddingBottom: 6,
                             color: "#858584",
                           }}
                         >
-                          {count}
+                          <span
+                            className=" absolute"
+                            style={{
+                              left: 9,
+                              color: "#858584",
+                            }}
+                          >
+                            {count}
+                          </span>
                         </span>
-                      </span>
-                    </div>
-                    <div className="pb-5 px-10 text-center xs:w-[100%] xs:flex md:flex lg:block">
-                      <div className="flex justify-center">
-                        <img className="w-28" src={avatar} alt="" />
                       </div>
-                      <div>
-                        <p className="font-semibold	text-xl	mt-3">{username}</p>
-                        <div className="flex items-center justify-center gap-3">
-                          <p className={styles.custom}>
-                            <span style={{ color: "#858584" }}>
-                              Total Sales:
-                            </span>{" "}
-                            {price}
-                          </p>
+                      <div className="pb-5 px-10 text-center xs:w-[100%] xs:flex md:flex lg:block">
+                        <div className="flex justify-center">
+                          <img className="w-28" src={avatar} alt="" />
+                        </div>
+                        <div>
+                          <p className="font-semibold	text-xl	mt-3">{username}</p>
+                          <div className="flex items-center justify-center gap-3">
+                            <p className={styles.custom}>
+                              <span style={{ color: "#858584" }}>
+                                Total Sales:
+                              </span>{" "}
+                              {price}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -185,6 +197,56 @@ const HomeComponent = () => {
             <img src="/images/rankings.svg" />
             <p className="font-semibold">View Rankings</p>
           </button>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
+        <h2 className="text-4xl	font-semibold">Browse Categories</h2>
+        <div className="container justify-center m-auto grid lg:grid-cols-4 lg:grid-rows-2 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-2 gap-4">
+          {Data.categories.map(({ id, images, iconHover, title }) => {
+            return (
+              <div
+                style={{
+                  backgroundColor: "#3B3B3B",
+                  borderRadius: 25,
+                }}
+                className="mt-8"
+              >
+                <div
+                  key={id}
+                  className="relative w-full  group  rounded-tl-[inherit] rounded-tr-[inherit]"
+                >
+                  <img
+                    src={images}
+                    className="w-full object-cover rounded-tl-[inherit] rounded-tr-[inherit]"
+                  />
+                  <div
+                    style={{
+                      backdropFilter: "blur(5px)",
+                    }}
+                    className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl font-bold opacity-0 group-hover:opacity-100  duration-1000   rounded-tl-[inherit] rounded-tr-[inherit]"
+                  >
+                    <img
+                      className=" rounded-tl-[inherit] rounded-tr-[inherit]"
+                      src={iconHover}
+                    />
+                  </div>
+                </div>
+                <p
+                  style={{
+                    fontSize: "22px",
+                    fontWeight: 600,
+                    marginTop: 12,
+                    marginBottom: 19,
+                    marginLeft: "18px",
+                  }}
+                  className={styles.text16}
+                >
+                  {title}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

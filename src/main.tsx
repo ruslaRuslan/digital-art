@@ -4,6 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import "./index.css";
 
+// AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const container: any = document.getElementById("root");
 const root = createRoot(container);
 

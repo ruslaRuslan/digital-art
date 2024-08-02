@@ -137,5 +137,55 @@
       "username": "Ghiblier",
       "price": 34.53
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "images": "/images/categoryIconBg.svg",
+      "iconHover": "/images/categoryhoverIcon.svg",
+      "title": "Art"
+    },
+    {
+      "id": 2,
+      "images": "/images/categoryIconBg2.svg",
+      "iconHover": "/images/categoryhoverIcon2.svg",
+      "title": "Collectibles"
+    },
+    {
+      "id": 3,
+      "images": "/images/categoryIconBg3.svg",
+      "iconHover": "/images/categoryhoverIcon3.svg",
+      "title": "Music"
+    },
+    {
+      "id": 4,
+      "images": "/images/categoryIconBg4.svg",
+      "iconHover": "/images/categoryhoverIcon4.svg",
+      "title": "Photography"
+    },
+    {
+      "id": 5,
+      "images": "/images/categoryIconBg5.svg",
+      "iconHover": "/images/categoryhoverIcon5.svg",
+      "title": "Video"
+    },
+    {
+      "id": 6,
+      "images": "/images/categoryIconBg6.svg",
+      "iconHover": "/images/categoryhoverIcon6.svg",
+      "title": "Utility"
+    },
+    {
+      "id": 7,
+      "images": "/images/categoryIconBg7.png",
+      "iconHover": "/images/categoryhoverIcon7.svg",
+      "title": "Sport"
+    },
+    {
+      "id": 8,
+      "images": "/images/categoryIconBg8.png",
+      "iconHover": "/images/categoryhoverIcon8.svg",
+      "title": "Virtual Worlds"
+    }
   ]
 }
