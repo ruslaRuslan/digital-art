@@ -5,6 +5,9 @@
 .hoverEffect {
   position: relative;
 }
+body {
+  overflow-x: hidden;
+}
 
 .hoverEffect::after {
   content: "";
