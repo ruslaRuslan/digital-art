@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
 import Data from "../../Data.json";
 import styles from "../../styles.module.css";
-import { motion } from "framer-motion";
+import Countdown from "../Oclock";
 import TrendingCollections from "../TrendingCollections";
 const HomeComponent = () => {
+  const trendingItem = Data.TopCreators.find((item) => item.id === 7);
   return (
     <>
       <header className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 ">
@@ -47,6 +49,7 @@ const HomeComponent = () => {
                 </div>
               </div>
             </motion.div>
+
             <motion.div
               className="card h-fit max-w-6xl p-5 md:p-12 flex md:justify-end justify-center"
               id="form"
@@ -263,10 +266,17 @@ const HomeComponent = () => {
             <h2 className="font-bold text-4xl">Discover More NFTs</h2>
             <p className="mt-3 text-xl">Explore new trending NFTs</p>
           </div>
-          <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
-            <img src="/images/eye.svg" />
-            <p className="font-semibold">See All</p>
-          </button>
+
+          <div
+            data-aos="fade-down-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 md:flex  xs:hidden">
+              <img src="/images/eye.svg" />
+              <p className="font-semibold">See All</p>
+            </button>
+          </div>
         </div>
         <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-16">
           {Data.discoverMore.map(
@@ -321,6 +331,45 @@ const HomeComponent = () => {
               );
             }
           )}
+        </div>
+      </section>
+      <section className="mt-16 relative">
+        <div
+          className=" bg-cover bg-center h-screen w-full flex items-end"
+          style={{
+            backgroundImage:
+              "linear-gradient(to bottom, rgba(245, 246, 252, 0.1) 40%, rgba(117, 19, 93, 1)),url('images/gobelek.png')",
+          }}
+        >
+          <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 lg:py-20">
+            <div
+              style={{
+                backgroundColor: "#2B2B2B",
+              }}
+              className="mb-5 rounded-3xl	py-2 px-4 inline-flex items-center gap-2"
+            >
+              <img className="w-6 flex" src={trendingItem?.avatar} />
+              <p className="">{trendingItem?.username}</p>
+            </div>
+            <div className="flex flex-col md:flex-row justify-between">
+              <div className={styles.bottom1025}>
+                <h2 className="font-semibold	text-5xl	">Magic Mashrooms</h2>
+                <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
+                  <img src="/images/rankings.svg" />
+                  <p className="font-semibold">View Rankings</p>
+                </button>
+              </div>
+              <div>
+                <Countdown endTime={new Date(2024, 7, 6)} />
+                <div className="flex lg:hidden md:hidden xs:flex">
+                  <button className="flex items-center gap-4 text-black	 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-slate-100 active:bg-violet-400 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500    ">
+                    <img src="/images/eye.svg" />
+                    <p className="font-semibold">See All</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
