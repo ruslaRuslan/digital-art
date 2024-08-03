@@ -343,25 +343,50 @@ const HomeComponent = () => {
         >
           <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 lg:py-20">
             <div
-              style={{
-                backgroundColor: "#2B2B2B",
-              }}
-              className="mb-5 rounded-3xl	py-2 px-4 inline-flex items-center gap-2"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
             >
-              <img className="w-6 flex" src={trendingItem?.avatar} />
-              <p className="">{trendingItem?.username}</p>
+              <div
+                style={{
+                  backgroundColor: "#2B2B2B",
+                }}
+                className="mb-5 rounded-3xl	py-2 px-4 inline-flex items-center gap-2"
+              >
+                <img className="w-6 flex" src={trendingItem?.avatar} />
+                <p className="">{trendingItem?.username}</p>
+              </div>
             </div>
             <div className="flex flex-col md:flex-row justify-between">
-              <div className={styles.bottom1025}>
-                <h2 className="font-semibold	text-5xl	">Magic Mashrooms</h2>
-                <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
-                  <img src="/images/rankings.svg" />
-                  <p className="font-semibold">View Rankings</p>
-                </button>
+              <div
+                data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div className={styles.bottom1025}>
+                  <h2 className="font-semibold	text-5xl">Magic Mashrooms</h2>
+                  <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12  mt-7 bg-slate-100 active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2  xs:hidden md:flex ">
+                    <img src="/images/eye.svg" />
+                    <p className="font-semibold text-black">See All</p>
+                  </button>
+                </div>
               </div>
+
               <div>
-                <Countdown endTime={new Date(2024, 7, 6)} />
-                <div className="flex lg:hidden md:hidden xs:flex">
+                <div
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                >
+                  <Countdown endTime={new Date(2024, 7, 6)} />
+                </div>
+              </div>
+              <div className="flex lg:hidden md:hidden xs:flex mb-6">
+                <div
+                  data-aos="flip-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                >
                   <button className="flex items-center gap-4 text-black	 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-slate-100 active:bg-violet-400 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500    ">
                     <img src="/images/eye.svg" />
                     <p className="font-semibold">See All</p>
@@ -370,6 +395,39 @@ const HomeComponent = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
+        <h2 className="text-3xl	">How it works</h2>
+        <p className="text-lg	">Find out how to get started</p>
+        <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-16 mt-8">
+          {Data.howItWorksIcon.map(({ id, images, title, text }) => {
+            return (
+              <div
+                key={id}
+                data-aos="flip-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div
+                  style={{ backgroundColor: "#3B3B3B" }}
+                  className="rounded-3xl lg:block md:block xs:flex"
+                >
+                  <div className="flex justify-center">
+                    <img src={images} />
+                  </div>
+                  <div className="lg:px-10 md:px-10, xs:px-2 lg:pb-8 md:pb-2 xs:pb-5 lg:text-center md:text-center xs:text-start  ">
+                    <h2 className="text-2xl font-semibold	 lg:mt-0 md:mt-0 xs:mt-9">
+                      {title}
+                    </h2>
+                    <p className="lg:mt-3 md:mt-3 xs:mt-1 lg:text-xl		md:text-xl	 xs:text-sm		">
+                      {text}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>
