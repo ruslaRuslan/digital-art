@@ -1,7 +1,7 @@
 {
   "imageMarketplease": "/images/storefront.png",
   "MarketplaceTitle": "NFT Marketplace",
-  "headerDates": [
+  "explore": [
     { "id": 1, "title": "Marketplace", "href": "/" },
     { "id": 2, "title": "Rankings", "href": "/about" },
     { "id": 3, "title": "Connect a wallet", "href": "/connect" },
@@ -241,6 +241,28 @@
       "images": "/images/howItWorksIcon3.svg",
       "title": "Start Earning",
       "text": "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others."
+    }
+  ],
+  "footerLogo": [
+    {
+      "id": 1,
+      "href": "https://discord.com/",
+      "icons": "/images/discordLogo.svg"
+    },
+    {
+      "id": 2,
+      "href": "https://www.youtube.com/account",
+      "icons": "/images/instagramLogo.svg"
+    },
+    {
+      "id": 3,
+      "href": "https://twitter.com/",
+      "icons": "/images/twitterLogo.svg"
+    },
+    {
+      "id": 4,
+      "href": "https://www.instagram.com/accounts/emailsignup/",
+      "icons": "/images/youtubeLogo.svg"
     }
   ]
 }

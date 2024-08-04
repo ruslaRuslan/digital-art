@@ -3,7 +3,7 @@ import Data from "../../Data.json";
 import styles from "../../styles.module.css";
 import Countdown from "../Oclock";
 import TrendingCollections from "../TrendingCollections";
-// import FullHowerCard from "../FullHowerCard";
+
 const HomeComponent = () => {
   const trendingItem = Data.TopCreators.find((item) => item.id === 7);
   return (
@@ -429,49 +429,66 @@ const HomeComponent = () => {
           })}
         </div>
       </section>
-      {/* <FullHowerCard /> */}
-      <section className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
+
+      <footer className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
         <div
           style={{
             backgroundColor: "#3B3B3B",
           }}
           className=" container p-8 rounded-2xl items-center justify-center m-auto grid lg:grid-cols-2 lg:grid-rows-1 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 lg:gap-16 md:gap-12 xs:gap-3"
         >
-          <img src="/images/photoInCosmos.svg" />
+          <div
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <div className="w-full flex items-center justify-center p-2">
+              <div className="transform  transition duration-500 hover:scale-110 flex justify-center items-center">
+                <img src="/images/photoInCosmos.svg" />
+              </div>
+            </div>
+          </div>
 
           <div className=" relative max-w-[300px]">
-            <h2 className="text-4xl	font-semibold	">Join Our Weekly Digest</h2>
-            <p className="text-lg	 mt-6">
-              Get exclusive Eromotions & Updates Straight To Your Inbox.
-            </p>
-            <form className=" lg:flex md:block sm:block xs:block mt-6">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="lg:px-12 lg:py-[20px] md:w-full md:py-[15px] md:px-5 sm:py-[15px] sm:w-full sm:pl-3 xs:pl-3 xs:w-full xs:py-[10px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-purple-700 focus:border-sky-100 block  dark:bg-white dark:border-gray-600 dark:placeholder-black dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500  outline-none transition-all duration-500"
-                placeholder="Enter your email here"
-                required
-              />
-              <button
-                type="submit"
-                className="mt-5 lg:hidden md:flex md:justify-center md:gap-2 sm:flex gap-2 justify-center md:py-[15px]  md:w-full sm:py-[15px]  xs:flex xs:gap-2 xs:justify-center xs:py-[10px] rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem]  focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm w-full sm:w-full text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 "
-              >
-                <img src="/images/messageIcon.svg" />
-                <p className="font-semibold	">Subscribe</p>
-              </button>
+            <div
+              data-aos="zoom-in-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              <h2 className="text-4xl	font-semibold	">Join Our Weekly Digest</h2>
+              <p className="text-lg	 mt-6">
+                Get exclusive Eromotions & Updates Straight To Your Inbox.
+              </p>
+              <form className=" lg:flex md:block sm:block xs:block mt-6">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="lg:px-12 lg:py-[20px] md:w-full md:py-[15px] md:px-5 sm:py-[15px] sm:w-full sm:pl-3 xs:pl-3 xs:w-full xs:py-[10px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-purple-700 focus:border-sky-100 block  dark:bg-white dark:border-gray-600 dark:placeholder-black dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500  outline-none transition-all duration-500"
+                  placeholder="Enter your email here"
+                  required
+                />
 
-              <button
-                type="submit"
-                className=" gap-2 absolute lg:flex md:hidden sm:hidden xs:hidden left-[12rem] rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem]  focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm w-full sm:w-auto px-16 py-[21px] text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 "
-              >
-                <img src="/images/messageIcon.svg" />
-                <p className="font-semibold	">Subscribe</p>
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  className="mt-5 lg:hidden md:flex md:justify-center md:gap-2 sm:flex gap-2 justify-center md:py-[15px]  md:w-full sm:py-[15px]  xs:flex xs:gap-2 xs:justify-center xs:py-[10px] rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem]  focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm w-full sm:w-full text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 "
+                >
+                  <img src="/images/messageIcon.svg" />
+                  <p className="font-semibold	">Subscribe</p>
+                </button>
+
+                <button
+                  type="submit"
+                  className=" gap-2 absolute lg:flex md:hidden sm:hidden xs:hidden left-[12rem] rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem]  focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm w-full sm:w-auto px-16 py-[21px] text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 "
+                >
+                  <img src="/images/messageIcon.svg" />
+                  <p className="font-semibold	">Subscribe</p>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </section>
+      </footer>
     </>
   );
 };
