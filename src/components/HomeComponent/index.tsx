@@ -141,34 +141,11 @@ const HomeComponent = () => {
                 data-aos-duration="2000"
               >
                 <div className="flex hover:scale-110 duration-500">
-                  <div
-                    className="m-6 xs:w-[100%] md:w-[100%]"
-                    style={{
-                      width: "100%",
-                      background: "#3B3B3B",
-                      borderRadius: 17,
-                    }}
-                  >
+                  <div className="m-6 w=[100%] bg-[#3B3B3B] rounded-[17px]">
                     <div className="mt-4  relative">
                       <div className="absolute ml-2">
-                        <span
-                          style={{
-                            backgroundColor: "#2B2B2B",
-                            borderRadius: "50%",
-                            paddingRight: 16,
-                            paddingLeft: 16,
-                            paddingTop: 6,
-                            paddingBottom: 6,
-                            color: "#858584",
-                          }}
-                        >
-                          <span
-                            className=" absolute"
-                            style={{
-                              left: 9,
-                              color: "#858584",
-                            }}
-                          >
+                        <span className="bg-[#2B2B2B] rounded-[50%] px-[16px] py-[6px] text-[#858584]">
+                          <span className=" absolute left-[9px] text-[#858584]">
                             {count}
                           </span>
                         </span>
@@ -181,9 +158,9 @@ const HomeComponent = () => {
                           <p className="font-semibold	text-xl	mt-3">{username}</p>
                           <div className="flex items-center justify-center gap-3">
                             <p className={styles.custom}>
-                              <span style={{ color: "#858584" }}>
-                                Total Sales:
-                              </span>{" "}
+                              <span className="text-[#858584]">
+                                Total Sales:{" "}
+                              </span>
                               {price}
                             </p>
                           </div>
@@ -215,13 +192,7 @@ const HomeComponent = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
               >
-                <div
-                  style={{
-                    backgroundColor: "#3B3B3B",
-                    borderRadius: 25,
-                  }}
-                  className="mt-8"
-                >
+                <div className="mt-8 bg-[#3B3B3B] rounded-[25px]">
                   <div
                     key={id}
                     className="relative w-full  group  rounded-tl-[inherit] rounded-tr-[inherit]"
@@ -230,12 +201,7 @@ const HomeComponent = () => {
                       src={images}
                       className="w-full object-cover rounded-tl-[inherit] rounded-tr-[inherit]"
                     />
-                    <div
-                      style={{
-                        backdropFilter: "blur(5px)",
-                      }}
-                      className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl font-bold opacity-0 group-hover:opacity-100  duration-1000   rounded-tl-[inherit] rounded-tr-[inherit]"
-                    >
+                    <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl font-bold opacity-0 group-hover:opacity-100  duration-1000   rounded-tl-[inherit] rounded-tr-[inherit] backdrop-blur-[5px]">
                       <img
                         className=" rounded-tl-[inherit] rounded-tr-[inherit]"
                         src={iconHover}
@@ -243,14 +209,7 @@ const HomeComponent = () => {
                     </div>
                   </div>
                   <p
-                    style={{
-                      fontSize: "22px",
-                      fontWeight: 600,
-                      paddingTop: 12,
-                      paddingBottom: 18,
-                      paddingLeft: "18px",
-                    }}
-                    className={styles.text16}
+                    className={`${styles.text16} text-[22px] font-bold p-[15px] `}
                   >
                     {title}
                   </p>
@@ -299,13 +258,7 @@ const HomeComponent = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="2000"
                 >
-                  <div
-                    style={{
-                      backgroundColor: "#3B3B3B",
-                      borderRadius: 20,
-                    }}
-                    className="mt-8"
-                  >
+                  <div className="mt-8 bg-[#3B3B3B] rounded-[20px]">
                     <img src={images} className="w-full object-cover" />
                     <div className="p-5">
                       <p className="text-xl	font-semibold">{title}</p>
@@ -313,12 +266,7 @@ const HomeComponent = () => {
                         <img className="mt-4" src={icons} />
                         <p>{user}</p>
                       </div>
-                      <div
-                        style={{
-                          color: "#858584",
-                        }}
-                        className="flex items-center justify-between mt-3"
-                      >
+                      <div className="flex items-center justify-between mt-3 text-[#858584]">
                         <p>{wordPrice}</p>
                         <p>{rates}</p>
                       </div>
@@ -348,12 +296,7 @@ const HomeComponent = () => {
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
             >
-              <div
-                style={{
-                  backgroundColor: "#2B2B2B",
-                }}
-                className="mb-5 rounded-3xl	py-2 px-4 inline-flex items-center gap-2"
-              >
+              <div className="mb-5 rounded-3xl	py-2 px-4 inline-flex items-center gap-2 bg-[#2B2B2B]">
                 <img className="w-6 flex" src={trendingItem?.avatar} />
                 <p className="">{trendingItem?.username}</p>
               </div>
@@ -410,10 +353,7 @@ const HomeComponent = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
               >
-                <div
-                  style={{ backgroundColor: "#3B3B3B" }}
-                  className="rounded-3xl lg:block md:block xs:flex lg:h-[420px] md:h-96 xs:h-auto"
-                >
+                <div className="rounded-3xl lg:block md:block xs:flex lg:h-[420px] md:h-96 xs:h-auto bg-[#3B3B3B] ">
                   <div className="flex justify-center">
                     <img src={images} />
                   </div>
@@ -431,12 +371,7 @@ const HomeComponent = () => {
       </section>
 
       <footer className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
-        <div
-          style={{
-            backgroundColor: "#3B3B3B",
-          }}
-          className=" container p-8 rounded-2xl items-center justify-center m-auto grid lg:grid-cols-2 lg:grid-rows-1 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 lg:gap-16 md:gap-12 xs:gap-3"
-        >
+        <div className=" lg:bg-[#3B3B3B] md:bg-[#3B3B3B] xs:bg-transparent container p-8 rounded-2xl items-center justify-center m-auto grid lg:grid-cols-2 lg:grid-rows-1 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 lg:gap-16 md:gap-12 xs:gap-3">
           <div
             data-aos="zoom-in"
             data-aos-easing="ease-out-cubic"
