@@ -3,7 +3,7 @@
   "MarketplaceTitle": "NFT Marketplace",
   "explore": [
     { "id": 1, "title": "Marketplace", "href": "/" },
-    { "id": 2, "title": "Rankings", "href": "/about" },
+    { "id": 2, "title": "Rankings", "href": "/rankings" },
     { "id": 3, "title": "Connect a wallet", "href": "/connect" },
     {
       "id": 4,
@@ -263,6 +263,752 @@
       "id": 4,
       "href": "https://www.instagram.com/accounts/emailsignup/",
       "icons": "/images/youtubeLogo.svg"
+    }
+  ],
+  "rankings": [
+    {
+      "value": "1",
+      "label": "Today",
+      "desc": [
+        {
+          "id": 1,
+          "count": 1,
+          "avatar": "/images/rankingsAvatar.svg",
+          "name": "Jaydon Ekstrom",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 2,
+          "count": 2,
+          "avatar": "/images/rankingsAvatar2.svg",
+          "name": "Ruben Carder",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 3,
+          "count": 3,
+          "avatar": "/images/rankingsAvatar3.svg",
+          "name": "Alfredo Septimus",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 4,
+          "count": 4,
+          "avatar": "/images/rankingsAvatar4.svg",
+          "name": "Davis Franci",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 5,
+          "count": 5,
+          "avatar": "/images/rankingsAvatar5.svg",
+          "name": "Livia Rosser",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 6,
+          "count": 6,
+          "avatar": "/images/rankingsAvatar6.svg",
+          "name": "Kianna Donin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 7,
+          "count": 7,
+          "avatar": "/images/rankingsAvatar7.svg",
+          "name": "Phillip Lipshutz",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 8,
+          "count": 8,
+          "avatar": "/images/rankingsAvatar8.svg",
+          "name": "Maria Rosser",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 9,
+          "count": 9,
+          "avatar": "/images/rankingsAvatar9.svg",
+          "name": "Kianna Stanton",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 10,
+          "count": 10,
+          "avatar": "/images/rankingsAvatar10.svg",
+          "name": "Angel Lubin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 11,
+          "count": 11,
+          "avatar": "/images/rankingsAvatar11.svg",
+          "name": "Allison Torff",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 12,
+          "count": 12,
+          "avatar": "/images/rankingsAvatar12.svg",
+          "name": "Davis Workman",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 13,
+          "count": 13,
+          "avatar": "/images/rankingsAvatar13.svg",
+          "name": "Lindsey Lipshutz",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 14,
+          "count": 14,
+          "avatar": "/images/rankingsAvatar14.svg",
+          "name": "Randy Carder",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 15,
+          "count": 15,
+          "avatar": "/images/rankingsAvatar15.svg",
+          "name": "Lydia Culhane",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 16,
+          "count": 16,
+          "avatar": "/images/rankingsAvatar16.svg",
+          "name": "Rayna Bator",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 17,
+          "count": 17,
+          "avatar": "/images/rankingsAvatar17.svg",
+          "name": "Jocelyn Westervelt",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 18,
+          "count": 18,
+          "avatar": "/images/rankingsAvatar18.svg",
+          "name": "Marilyn Torff",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 19,
+          "count": 19,
+          "avatar": "/images/rankingsAvatar19.svg",
+          "name": "Skylar Levin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 20,
+          "count": 20,
+          "avatar": "/images/rankingsAvatar20.svg",
+          "name": "Terry Dorwart",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        }
+      ]
+    },
+    {
+      "value": "2",
+      "label": "This Week",
+      "desc": [
+        {
+          "id": 1,
+          "count": 1,
+          "avatar": "/images/rankingsAvatar.svg",
+          "name": "Jaydon Ekstrom",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 2,
+          "count": 2,
+          "avatar": "/images/rankingsAvatar2.svg",
+          "name": "Ruben Carder",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 3,
+          "count": 3,
+          "avatar": "/images/rankingsAvatar3.svg",
+          "name": "Alfredo Septimus",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 4,
+          "count": 4,
+          "avatar": "/images/rankingsAvatar4.svg",
+          "name": "Davis Franci",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 5,
+          "count": 5,
+          "avatar": "/images/rankingsAvatar5.svg",
+          "name": "Livia Rosser",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 6,
+          "count": 6,
+          "avatar": "/images/rankingsAvatar6.svg",
+          "name": "Kianna Donin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 7,
+          "count": 7,
+          "avatar": "/images/rankingsAvatar7.svg",
+          "name": "Phillip Lipshutz",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 8,
+          "count": 8,
+          "avatar": "/images/rankingsAvatar8.svg",
+          "name": "Maria Rosser",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 9,
+          "count": 9,
+          "avatar": "/images/rankingsAvatar9.svg",
+          "name": "Kianna Stanton",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 10,
+          "count": 10,
+          "avatar": "/images/rankingsAvatar10.svg",
+          "name": "Angel Lubin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 11,
+          "count": 11,
+          "avatar": "/images/rankingsAvatar11.svg",
+          "name": "Allison Torff",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 12,
+          "count": 12,
+          "avatar": "/images/rankingsAvatar12.svg",
+          "name": "Davis Workman",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 13,
+          "count": 13,
+          "avatar": "/images/rankingsAvatar13.svg",
+          "name": "Lindsey Lipshutz",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 14,
+          "count": 14,
+          "avatar": "/images/rankingsAvatar14.svg",
+          "name": "Randy Carder",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 15,
+          "count": 15,
+          "avatar": "/images/rankingsAvatar15.svg",
+          "name": "Lydia Culhane",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 16,
+          "count": 16,
+          "avatar": "/images/rankingsAvatar16.svg",
+          "name": "Rayna Bator",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 17,
+          "count": 17,
+          "avatar": "/images/rankingsAvatar17.svg",
+          "name": "Jocelyn Westervelt",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 18,
+          "count": 18,
+          "avatar": "/images/rankingsAvatar18.svg",
+          "name": "Marilyn Torff",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 19,
+          "count": 19,
+          "avatar": "/images/rankingsAvatar19.svg",
+          "name": "Skylar Levin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 20,
+          "count": 20,
+          "avatar": "/images/rankingsAvatar20.svg",
+          "name": "Terry Dorwart",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        }
+      ]
+    },
+    {
+      "value": "3",
+      "label": "This Month",
+      "desc": [
+        {
+          "id": 1,
+          "count": 1,
+          "avatar": "/images/rankingsAvatar.svg",
+          "name": "Jaydon Ekstrom",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 2,
+          "count": 2,
+          "avatar": "/images/rankingsAvatar2.svg",
+          "name": "Ruben Carder",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 3,
+          "count": 3,
+          "avatar": "/images/rankingsAvatar3.svg",
+          "name": "Alfredo Septimus",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 4,
+          "count": 4,
+          "avatar": "/images/rankingsAvatar4.svg",
+          "name": "Davis Franci",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 5,
+          "count": 5,
+          "avatar": "/images/rankingsAvatar5.svg",
+          "name": "Livia Rosser",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 6,
+          "count": 6,
+          "avatar": "/images/rankingsAvatar6.svg",
+          "name": "Kianna Donin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 7,
+          "count": 7,
+          "avatar": "/images/rankingsAvatar7.svg",
+          "name": "Phillip Lipshutz",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 8,
+          "count": 8,
+          "avatar": "/images/rankingsAvatar8.svg",
+          "name": "Maria Rosser",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 9,
+          "count": 9,
+          "avatar": "/images/rankingsAvatar9.svg",
+          "name": "Kianna Stanton",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 10,
+          "count": 10,
+          "avatar": "/images/rankingsAvatar10.svg",
+          "name": "Angel Lubin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 11,
+          "count": 11,
+          "avatar": "/images/rankingsAvatar11.svg",
+          "name": "Allison Torff",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 12,
+          "count": 12,
+          "avatar": "/images/rankingsAvatar12.svg",
+          "name": "Davis Workman",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 13,
+          "count": 13,
+          "avatar": "/images/rankingsAvatar13.svg",
+          "name": "Lindsey Lipshutz",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 14,
+          "count": 14,
+          "avatar": "/images/rankingsAvatar14.svg",
+          "name": "Randy Carder",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 15,
+          "count": 15,
+          "avatar": "/images/rankingsAvatar15.svg",
+          "name": "Lydia Culhane",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 16,
+          "count": 16,
+          "avatar": "/images/rankingsAvatar16.svg",
+          "name": "Rayna Bator",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 17,
+          "count": 17,
+          "avatar": "/images/rankingsAvatar17.svg",
+          "name": "Jocelyn Westervelt",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 18,
+          "count": 18,
+          "avatar": "/images/rankingsAvatar18.svg",
+          "name": "Marilyn Torff",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 19,
+          "count": 19,
+          "avatar": "/images/rankingsAvatar19.svg",
+          "name": "Skylar Levin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 20,
+          "count": 20,
+          "avatar": "/images/rankingsAvatar20.svg",
+          "name": "Terry Dorwart",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        }
+      ]
+    },
+    {
+      "value": "4",
+      "label": "All Time",
+      "desc": [
+        {
+          "id": 1,
+          "count": 1,
+          "avatar": "/images/rankingsAvatar.svg",
+          "name": "Jaydon Ekstrom",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 2,
+          "count": 2,
+          "avatar": "/images/rankingsAvatar2.svg",
+          "name": "Ruben Carder",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 3,
+          "count": 3,
+          "avatar": "/images/rankingsAvatar3.svg",
+          "name": "Alfredo Septimus",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 4,
+          "count": 4,
+          "avatar": "/images/rankingsAvatar4.svg",
+          "name": "Davis Franci",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 5,
+          "count": 5,
+          "avatar": "/images/rankingsAvatar5.svg",
+          "name": "Livia Rosser",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 6,
+          "count": 6,
+          "avatar": "/images/rankingsAvatar6.svg",
+          "name": "Kianna Donin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 7,
+          "count": 7,
+          "avatar": "/images/rankingsAvatar7.svg",
+          "name": "Phillip Lipshutz",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 8,
+          "count": 8,
+          "avatar": "/images/rankingsAvatar8.svg",
+          "name": "Maria Rosser",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 9,
+          "count": 9,
+          "avatar": "/images/rankingsAvatar9.svg",
+          "name": "Kianna Stanton",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 10,
+          "count": 10,
+          "avatar": "/images/rankingsAvatar10.svg",
+          "name": "Angel Lubin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 11,
+          "count": 11,
+          "avatar": "/images/rankingsAvatar11.svg",
+          "name": "Allison Torff",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 12,
+          "count": 12,
+          "avatar": "/images/rankingsAvatar12.svg",
+          "name": "Davis Workman",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 13,
+          "count": 13,
+          "avatar": "/images/rankingsAvatar13.svg",
+          "name": "Lindsey Lipshutz",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 14,
+          "count": 14,
+          "avatar": "/images/rankingsAvatar14.svg",
+          "name": "Randy Carder",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 15,
+          "count": 15,
+          "avatar": "/images/rankingsAvatar15.svg",
+          "name": "Lydia Culhane",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 16,
+          "count": 16,
+          "avatar": "/images/rankingsAvatar16.svg",
+          "name": "Rayna Bator",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 17,
+          "count": 17,
+          "avatar": "/images/rankingsAvatar17.svg",
+          "name": "Jocelyn Westervelt",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 18,
+          "count": 18,
+          "avatar": "/images/rankingsAvatar18.svg",
+          "name": "Marilyn Torff",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 19,
+          "count": 19,
+          "avatar": "/images/rankingsAvatar19.svg",
+          "name": "Skylar Levin",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        },
+        {
+          "id": 20,
+          "count": 20,
+          "avatar": "/images/rankingsAvatar20.svg",
+          "name": "Terry Dorwart",
+          "percent": "+1.41%",
+          "sold": 602,
+          "volume": 12.4
+        }
+      ]
     }
   ]
 }

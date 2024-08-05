@@ -9,13 +9,7 @@ export default function Example(): JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header
-      style={{
-        marginTop: 10,
-        backgroundColor: "#2B2B2B",
-        color: "#fff",
-      }}
-    >
+    <header className="mt-[10px] bg-[#2B2B2B] text-[#fff]">
       <nav className="container px-10">
         <div className="flex items-center justify-between">
           <div className="flex">

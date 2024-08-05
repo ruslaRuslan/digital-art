@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router";
 import Home from "../pages/home/page";
-import About from "../pages/about/page";
 import Connect from "../pages/connect/page";
+import Rankings from "../pages/rankings/page";
 
 const Routing = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/rankings" element={<Rankings />} />
         <Route path="/connect" element={<Connect />} />
       </Routes>
     </>
