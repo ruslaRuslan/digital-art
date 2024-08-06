@@ -24,7 +24,7 @@ const TodayComponent = ({ props }: any) => {
                     {name}
                   </h2>
                 </div>
-                <p className="text-[#00AC4F] lg:block md:block sm:hidden xs:hidden">
+                <p className=" text-[#00AC4F] lg:block md:block sm:hidden xs:hidden">
                   {percent}
                 </p>
                 <p className="lg:block md:hidden sm:hidden xs:hidden ">

@@ -1,5 +1,9 @@
 const ConnectWalletComponent = () => {
-  return <div>ConnectWalletdvvvvvvvvvssssssssaComponent</div>;
+  return (
+    <div className="text-[red]">
+      ConnectWalletdvvvvvvvvvssssssssaComponcdvfdent
+    </div>
+  );
 };
 
 export default ConnectWalletComponent;

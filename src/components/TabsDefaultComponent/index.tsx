@@ -11,7 +11,7 @@ import {
 import Dates from "../Dates";
 
 export function TabsDefaultComponent() {
-  const [activeTab, setActiveTab] = useState("html");
+  const [activeTab, setActiveTab] = useState("1");
   const _TabsHeader: any = TabsHeader as any;
   const _Tab: any = Tab as any;
   const _TabsBody: any = TabsBody as any;
@@ -30,7 +30,9 @@ export function TabsDefaultComponent() {
             value={value}
             onClick={() => setActiveTab(value as any)}
             className={
-              (activeTab as any) === value ? "text-[#fff] " : "text-[#858584]"
+              (activeTab as any) === value
+                ? "text-[#fff] "
+                : "text-[#858584] cursor-pointer"
             }
           >
             {label}

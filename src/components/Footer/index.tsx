@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <section className="bg-[#3B3B3B]  md:pr-20 lg:p-0">
-        <div className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20 ">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:py-20 ">
           <div className="container p-8 rounded-2xl items-start justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols- sm:grid-cols-1 sm:row-span-3 xs:grid-cols-1 lg:gap-16 md:gap-12 xs:gap-3">
             <div>
               <div className="flex gap-2 items-center">
