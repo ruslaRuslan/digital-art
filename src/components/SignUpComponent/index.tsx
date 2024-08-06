@@ -25,6 +25,8 @@ const SignUpComponent = () => {
               <div data-aos="fade-left" data-aos-duration="500">
                 <input
                   type="text"
+                  id="username"
+                  name="username"
                   className=" lg:w-[350px] xs:w-full px-12 py-[12px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-purple-700 focus:border-sky-100 block  dark:bg-white dark:border-gray-600 dark:placeholder-black dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500  outline-none transition-all duration-500"
                   placeholder="Username"
                   required
@@ -37,6 +39,8 @@ const SignUpComponent = () => {
               <div data-aos="fade-left" data-aos-duration="1000">
                 <input
                   type="email"
+                  id="email"
+                  name="email"
                   className=" mt-3 lg:w-[350px] xs:w-full px-12 py-[12px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-purple-700 focus:border-sky-100 block  dark:bg-white dark:border-gray-600 dark:placeholder-black dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500  outline-none transition-all duration-500"
                   placeholder="Email Address"
                   required
@@ -49,6 +53,8 @@ const SignUpComponent = () => {
               <div data-aos="fade-left" data-aos-duration="1500">
                 <input
                   type="password"
+                  id="password"
+                  name="password"
                   className=" mt-3 lg:w-[350px] xs:w-full px-12 py-[12px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-purple-700 focus:border-sky-100 block  dark:bg-white dark:border-gray-600 dark:placeholder-black dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500  outline-none transition-all duration-500"
                   placeholder="Password"
                   required
@@ -61,8 +67,10 @@ const SignUpComponent = () => {
               <div data-aos="fade-left" data-aos-duration="2000">
                 <input
                   type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
                   className=" mt-3 lg:w-[350px] xs:w-full px-12 py-[12px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-purple-700 focus:border-sky-100 block  dark:bg-white dark:border-gray-600 dark:placeholder-black dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500  outline-none transition-all duration-500"
-                  placeholder="Password"
+                  placeholder="Confirm Password"
                   required
                 />
                 <img
@@ -71,7 +79,10 @@ const SignUpComponent = () => {
                 />
               </div>
               <div data-aos="fade-left" data-aos-duration="2500">
-                <button className=" lg:py-[10px] lg:px-[7.4rem] md:py-[10px] md:px-[7.4rem] sm:py-[10px] sm:px-[16.2rem] xs:py-[10px] xs:px-[6.3rem] flex flex-col hover:bg-purple-600 mt-7 bg-purple-700 active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 rounded-3xl duration-500 border-2 border-purple-700">
+                <button
+                  type="submit"
+                  className=" lg:py-[10px] lg:px-[7.4rem] md:py-[10px] md:px-[7.4rem] sm:py-[10px] sm:px-[16.2rem] xs:py-[10px] xs:px-[6.3rem] flex flex-col hover:bg-purple-600 mt-7 bg-purple-700 active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 rounded-3xl duration-500 border-2 border-purple-700"
+                >
                   <p className="items-center font-semibold">Create account</p>
                 </button>
               </div>

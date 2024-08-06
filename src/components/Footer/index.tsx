@@ -1,5 +1,4 @@
 import Data from "../../Data.json";
-
 const Footer = () => {
   return (
     <>
@@ -17,7 +16,7 @@ const Footer = () => {
                 </h2>
                 <p className="mt-3 mb-3">Join our community</p>
                 <div className="flex items-center gap-2">
-                  {Data.footerLogo.map((element) => {
+                  {Data.footerLogo.slice(1).map((element) => {
                     return (
                       <a target="_blank" key={element.id} href={element.href}>
                         <img src={element.icons} />
@@ -74,6 +73,8 @@ const Footer = () => {
               </form>
             </div>
           </div>
+          <p className="border-t-2 border-[#858584] lg:pt-1 lg:pb-9 md:pt-2 md:pb-5 sm:pt-1 sm:pb-3 xs:pb-5"></p>
+          <p className="pb-5">Ⓒ NFT Market. Use this template freely.</p>
         </div>
       </section>
     </>

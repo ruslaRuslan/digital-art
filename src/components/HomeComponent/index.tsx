@@ -353,15 +353,17 @@ const HomeComponent = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
               >
-                <div className="rounded-3xl lg:block md:block xs:flex lg:h-[420px] md:h-96 xs:h-auto bg-[#3B3B3B] ">
-                  <div className="flex justify-center">
-                    <img src={images} />
-                  </div>
-                  <div className="lg:px-10 md:px-10, xs:px-2 lg:pb-8 md:pb-2 xs:pb-5 lg:text-center md:text-center xs:text-start  ">
-                    <h2 className="text-2xl font-semibold	 lg:mt-0 md:mt-0 xs:mt-9">
-                      {title}
-                    </h2>
-                    <p>{text}</p>
+                <div className="transform  transition duration-500 hover:scale-[1.1] flex justify-center items-center">
+                  <div className="rounded-3xl lg:block md:block xs:flex lg:h-[420px] md:h-96 xs:h-auto bg-[#3B3B3B] ">
+                    <div className="flex justify-center">
+                      <img src={images} />
+                    </div>
+                    <div className="lg:px-10 md:px-10, xs:px-2 lg:pb-8 md:pb-2 xs:pb-5 lg:text-center md:text-center xs:text-start  ">
+                      <h2 className="text-2xl font-semibold	 lg:mt-0 md:mt-0 xs:mt-9">
+                        {title}
+                      </h2>
+                      <p>{text}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -370,7 +372,7 @@ const HomeComponent = () => {
         </div>
       </section>
 
-      <footer className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
+      <footer className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20 lg:mb-0 md:mb-10 sm:mb-0">
         <div className=" lg:bg-[#3B3B3B] md:bg-[#3B3B3B] xs:bg-transparent container p-8 rounded-2xl items-center justify-center m-auto grid lg:grid-cols-2 lg:grid-rows-1 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 lg:gap-16 md:gap-12 xs:gap-3">
           <div
             data-aos="zoom-in"
