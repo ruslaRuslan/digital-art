@@ -7,7 +7,6 @@ const RankingsComponent = () => {
         <p className="text-[16px] mt-2 mb-12">
           Check out top ranking NFT artists on the NFT Marketplace.
         </p>
-
         <TabsDefaultComponent />
       </header>
     </>

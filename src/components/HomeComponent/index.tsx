@@ -239,47 +239,49 @@ const HomeComponent = () => {
           </div>
         </div>
         <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-16">
-          {Data.discoverMore.map(
-            ({
-              id,
-              images,
-              title,
-              icons,
-              user,
-              wordPrice,
-              rates,
-              price,
-              wt,
-            }) => {
-              return (
-                <div
-                  key={id}
-                  data-aos="zoom-out-down"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
-                  <div className="mt-8 bg-[#3B3B3B] rounded-[20px]">
-                    <img src={images} className="w-full object-cover" />
-                    <div className="p-5">
-                      <p className="text-xl	font-semibold">{title}</p>
-                      <div className="flex items-end gap-3">
-                        <img className="mt-4" src={icons} />
-                        <p>{user}</p>
-                      </div>
-                      <div className="flex items-center justify-between mt-3 text-[#858584]">
-                        <p>{wordPrice}</p>
-                        <p>{rates}</p>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <p>{price} ETH</p>
-                        <p>{wt}</p>
+          {Data.discoverMore
+            .slice(0, 3)
+            .map(
+              ({
+                id,
+                images,
+                title,
+                icons,
+                user,
+                wordPrice,
+                rates,
+                price,
+                wt,
+              }) => {
+                return (
+                  <div
+                    key={id}
+                    data-aos="zoom-out-down"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                  >
+                    <div className="mt-8 bg-[#3B3B3B] rounded-[20px]">
+                      <img src={images} className="w-full object-cover" />
+                      <div className="p-5">
+                        <p className="text-xl	font-semibold">{title}</p>
+                        <div className="flex items-end gap-3">
+                          <img className="mt-4" src={icons} />
+                          <p>{user}</p>
+                        </div>
+                        <div className="flex items-center justify-between mt-3 text-[#858584]">
+                          <p>{wordPrice}</p>
+                          <p>{rates}</p>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <p>{price} ETH</p>
+                          <p>{wt}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            }
-          )}
+                );
+              }
+            )}
         </div>
       </section>
       <section className="mt-16 relative">

@@ -221,6 +221,72 @@
       "rates": "Highest Bid",
       "price": 1.63,
       "wt": "0.33 wETH"
+    },
+    {
+      "id": 4,
+      "images": "/images/artist_page4.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 5,
+      "images": "/images/artist_page5.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 6,
+      "images": "/images/artist_page6.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 7,
+      "images": "/images/artist_page7.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 8,
+      "images": "/images/artist_page8.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 8,
+      "images": "/images/categoryIconBg2.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
     }
   ],
   "howItWorksIcon": [
@@ -257,7 +323,7 @@
     {
       "id": 3,
       "href": "https://www.youtube.com/account",
-      "icons": "/images/instagramLogo.svg"
+      "icons": "/images/youtubeLogo.svg"
     },
     {
       "id": 4,
@@ -267,7 +333,7 @@
     {
       "id": 5,
       "href": "https://www.instagram.com/accounts/emailsignup/",
-      "icons": "/images/youtubeLogo.svg"
+      "icons": "/images/instagramLogo.svg"
     }
   ],
   "rankings": [
@@ -1031,6 +1097,324 @@
       "id": 3,
       "k": "3000+",
       "title": "Followers"
+    }
+  ],
+
+  "artist_page2": [
+    {
+      "value": "1",
+      "label": "Created",
+      "desc": [
+        {
+          "id": 1,
+          "images": "/images/discoverMore.svg",
+          "title": "Distant Galaxy",
+          "icons": "/images/icon.svg",
+          "user": "MoonDancer",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.72,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 2,
+          "images": "/images/discoverMore2.svg",
+          "title": "Life On Edena",
+          "icons": "/images/icon2.svg",
+          "user": "NebulaKid",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.81,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 3,
+          "images": "/images/discoverMore3.svg",
+          "title": "AstroFiction",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 4,
+          "images": "/images/artist_page4.svg",
+          "title": "CryptoCity",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 5,
+          "images": "/images/artist_page5.svg",
+          "title": "ColorfulDog 0524",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 6,
+          "images": "/images/artist_page6.svg",
+          "title": "Space Tales",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 7,
+          "images": "/images/artist_page7.svg",
+          "title": "Cherry Blossom Girl 037",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 8,
+          "images": "/images/artist_page8.svg",
+          "title": "Dancing Robots 0987",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 8,
+          "images": "/images/categoryIconBg2.svg",
+          "title": "IceCream Ape ",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        }
+      ]
+    },
+    {
+      "value": "2",
+      "label": "Owned",
+      "desc": [
+        {
+          "id": 1,
+          "images": "/images/discoverMore.svg",
+          "title": "Distant Galaxy",
+          "icons": "/images/icon.svg",
+          "user": "MoonDancer",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.72,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 2,
+          "images": "/images/discoverMore2.svg",
+          "title": "Life On Edena",
+          "icons": "/images/icon2.svg",
+          "user": "NebulaKid",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.81,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 3,
+          "images": "/images/discoverMore3.svg",
+          "title": "AstroFiction",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 4,
+          "images": "/images/artist_page4.svg",
+          "title": "CryptoCity",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 5,
+          "images": "/images/artist_page5.svg",
+          "title": "ColorfulDog 0524",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 6,
+          "images": "/images/artist_page6.svg",
+          "title": "Space Tales",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 7,
+          "images": "/images/artist_page7.svg",
+          "title": "Cherry Blossom Girl 037",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 8,
+          "images": "/images/artist_page8.svg",
+          "title": "Dancing Robots 0987",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 8,
+          "images": "/images/categoryIconBg2.svg",
+          "title": "IceCream Ape ",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        }
+      ]
+    },
+    {
+      "value": "3",
+      "label": "Collection",
+      "desc": [
+        {
+          "id": 1,
+          "images": "/images/discoverMore.svg",
+          "title": "Distant Galaxy",
+          "icons": "/images/icon.svg",
+          "user": "MoonDancer",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.72,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 2,
+          "images": "/images/discoverMore2.svg",
+          "title": "Life On Edena",
+          "icons": "/images/icon2.svg",
+          "user": "NebulaKid",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.81,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 3,
+          "images": "/images/discoverMore3.svg",
+          "title": "AstroFiction",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 4,
+          "images": "/images/artist_page4.svg",
+          "title": "CryptoCity",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 5,
+          "images": "/images/artist_page5.svg",
+          "title": "ColorfulDog 0524",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 6,
+          "images": "/images/artist_page6.svg",
+          "title": "Space Tales",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 7,
+          "images": "/images/artist_page7.svg",
+          "title": "Cherry Blossom Girl 037",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 8,
+          "images": "/images/artist_page8.svg",
+          "title": "Dancing Robots 0987",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        },
+        {
+          "id": 8,
+          "images": "/images/categoryIconBg2.svg",
+          "title": "IceCream Ape ",
+          "icons": "/images/icon3.svg",
+          "user": "Spaceone",
+          "wordPrice": "Price",
+          "rates": "Highest Bid",
+          "price": 1.63,
+          "wt": "0.33 wETH"
+        }
+      ]
     }
   ]
 }

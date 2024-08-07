@@ -1,5 +1,5 @@
 import Data from "../../Data.json";
-
+import { TabsDefaultComponent2 } from "../TabsDefaultComponent2";
 const ArtistPageComponent = () => {
   return (
     <>
@@ -11,7 +11,7 @@ const ArtistPageComponent = () => {
         }}
       ></div>
 
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-16 py-16 relative top-[-10rem]">
+      <section className="mx-auto max-w-7xl mt-14 px-4 sm:px-6 lg:px-16 relative top-[-10rem]">
         <div className="container justify-center lg:block md:block sm:justify-center xs:justify-center m-auto grid lg:grid-cols-1 lg:grid-rows-1 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 ">
           <div>
             <div className="flex lg:block md:block sm:justify-center xs:justify-center">
@@ -39,7 +39,7 @@ const ArtistPageComponent = () => {
               </div>
             </div>
 
-            <div className="  md-3  mb-5 lg:hidden md:hidden sm:flex sm:gap-5 xs:block ">
+            <div className="md-3  mb-5 lg:hidden md:hidden sm:flex sm:gap-5 xs:block ">
               <div>
                 <button className=" flex items-center gap-4 py-2 px-[6rem]   hover:bg-transparent mt-7 bg-purple-700 active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ...  rounded-2xl duration-500 border-2 border-purple-700   ">
                   <img src="/images/copy.svg" />
@@ -64,7 +64,9 @@ const ArtistPageComponent = () => {
                 );
               })}
             </div>
-            <p className="mt-4 text-[#858584] font-semibold text-[22px]">Bio</p>
+            <p className=" my-5 text-[#858584] font-semibold text-[22px]">
+              Bio
+            </p>
             <p className="lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[18px] mt-2">
               The internet's friendliest designer kid.
             </p>
@@ -85,6 +87,7 @@ const ArtistPageComponent = () => {
           </div>
         </div>
       </section>
+      <TabsDefaultComponent2 />
     </>
   );
 };
