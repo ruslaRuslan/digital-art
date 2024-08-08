@@ -88,7 +88,6 @@ const SignUpComponent = () => {
               </div>
             </form>
           </div>
-          {/* <p className="bg-[red] w-[100%]">d</p>   */}
         </div>
       </div>
     </>

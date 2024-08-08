@@ -1416,5 +1416,23 @@
         }
       ]
     }
+  ],
+
+  "connect_wallet": [
+    {
+      "id": 1,
+      "avatar": "/images/metamask.svg",
+      "title": "Metamask"
+    },
+    {
+      "id": 2,
+      "avatar": "/images/walletConnect.svg",
+      "title": "Wallet Connect"
+    },
+    {
+      "id": 3,
+      "avatar": "/images/coinbase.svg",
+      "title": "Coinbase"
+    }
   ]
 }
