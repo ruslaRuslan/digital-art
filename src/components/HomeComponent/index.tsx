@@ -10,7 +10,7 @@ const HomeComponent = () => {
     <>
       <header className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 ">
         <div className="flex items-center">
-          <div className="grid md:grid-cols-2">
+          <div className="grid lg:grid-cols-2 md:grid-cols-2 ">
             <motion.div
               initial={{
                 x: -100,
@@ -324,7 +324,7 @@ const HomeComponent = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="2000"
                 >
-                  <Countdown endTime={new Date(2024, 7, 6)} />
+                  <Countdown endTime={new Date(2024, 9, 9)} />
                 </div>
               </div>
               <div className="flex lg:hidden md:hidden xs:flex mb-6">

@@ -8,7 +8,13 @@ const Footer = () => {
             <div>
               <div className="flex gap-2 items-center">
                 <img src={Data.imageMarketplease} />
-                <p className="text-xl">{Data.MarketplaceTitle}</p>
+                {Data.explore.slice(0, 1).map(({ id, title, href }) => {
+                  return (
+                    <div key={id}>
+                      <a href={href}>{title}</a>
+                    </div>
+                  );
+                })}
               </div>
               <div className="mt-6 text-[#CCCCCC]">
                 <h2 className="mb-3 w-[220px]">
@@ -29,7 +35,7 @@ const Footer = () => {
             <div>
               <h2 className="text-xl">Explore</h2>
               <div className="flex flex-col gap-1">
-                {Data.explore.map(({ id, title, href }) => {
+                {Data.explore.slice(1).map(({ id, title, href }) => {
                   return (
                     <a className="mt-3 text-[#CCCCCC]" key={id} href={href}>
                       {title}
@@ -39,7 +45,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="">
+            <div>
               <h2 className="text-2xl font-semibold">Join Our Weekly Digest</h2>
               <p className="my-7">
                 Get exclusive promotions & updates straight to your inbox.
@@ -54,7 +60,6 @@ const Footer = () => {
                   placeholder="Enter your email here"
                   required
                 />
-
                 <button
                   type="submit"
                   className="mt-5 lg:hidden  md:hidden sm:flex gap-2 justify-center  sm:py-[15px] xs:flex xs:gap-2 xs:justify-center xs:py-[10px] rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem]  focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm w-[100%] sm:w-full text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 "
@@ -62,10 +67,9 @@ const Footer = () => {
                   <img src="/images/messageIcon.svg" />
                   <p className="font-semibold	">Subscribe</p>
                 </button>
-
                 <button
                   type="submit"
-                  className=" gap-2 -ml-12    lg:flex lg:py-[21px]  md:flex   md:py-4   sm:hidden xs:hidden  rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem] md:hover:px-[2.5rem]   focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm  sm:w-auto lg:px-9  py-[21px] text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 md:px-8 md:pl-[2rem]"
+                  className="gap-2 -ml-12 lg:flex lg:py-[21px]  md:flex   md:py-4   sm:hidden xs:hidden  rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem] md:hover:px-[2.5rem]   focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm  sm:w-auto lg:px-9  py-[21px] text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 md:px-8 md:pl-[2rem]"
                 >
                   <img src="/images/messageIcon.svg" />
                   <p className="font-semibold	">Subscribe</p>

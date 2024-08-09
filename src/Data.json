@@ -1,12 +1,13 @@
 {
   "imageMarketplease": "/images/storefront.png",
-  "MarketplaceTitle": "NFT Marketplace",
+
   "explore": [
-    { "id": 1, "title": "Marketplace", "href": "/" },
-    { "id": 2, "title": "Rankings", "href": "/rankings" },
-    { "id": 3, "title": "Connect a wallet", "href": "/connect" },
+    { "id": 1, "title": " NFT Marketplace", "href": "/" },
+    { "id": 2, "title": "Marketplace", "href": "/market-please" },
+    { "id": 3, "title": "Rankings", "href": "/rankings" },
+    { "id": 4, "title": "Connect a wallet", "href": "/connect" },
     {
-      "id": 4,
+      "id": 5,
       "title": "Sign Up",
       "href": "/sign-up",
       "images": "/images/user.svg"
@@ -1433,6 +1434,285 @@
       "id": 3,
       "avatar": "/images/coinbase.svg",
       "title": "Coinbase"
+    }
+  ],
+
+  "market_Please": [
+    {
+      "value": "1",
+      "label": "NFTs",
+      "desc": [
+        {
+          "id": 1,
+          "images": "/images/market_PleaseImages.svg",
+          "title": "Magic Mushroom 0325",
+          "avatar": "/images/avatarMarketplease.svg",
+          "name": "Shroomie",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 2,
+          "images": "/images/market_PleaseImages2.svg",
+          "title": "Happy Robot 032",
+          "avatar": "/images/avatarMarketplease2.svg",
+          "name": "BeKind2Robots",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 3,
+          "images": "/images/market_PleaseImages3.svg",
+          "title": "Happy Robot 024",
+          "avatar": "/images/avatarMarketplease2.svg",
+          "name": "BeKind2Robots",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 4,
+          "images": "/images/market_PleaseImages4.svg",
+          "title": "Designer Bear",
+          "avatar": "/images/avatarMarketplease4.svg",
+          "name": "Mr Fox",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 5,
+          "images": "/images/market_PleaseImages5.svg",
+          "title": "Colorful Dog 0356",
+          "avatar": "/images/avatarMarketplease5.svg",
+          "name": "Keepitreal",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 6,
+          "images": "/images/market_PleaseImages6.svg",
+          "title": "Dancing Robot 0312",
+          "avatar": "/images/avatarMarketplease6.svg",
+          "name": "Robotica",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 7,
+          "images": "/images/market_PleaseImages7.svg",
+          "title": "Cherry Blossom Girl 035",
+          "avatar": "/images/avatarMarketplease7.svg",
+          "name": "MoonDancer",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 8,
+          "images": "/images/market_PleaseImages8.svg",
+          "title": "Space Travel",
+          "avatar": "/images/avatarMarketplease8.svg",
+          "name": "NebulaKid",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 9,
+          "images": "/images/market_PleaseImages9.svg",
+          "title": "Sunset Dimension",
+          "avatar": "/images/avatarMarketplease9.svg",
+          "name": "Animakid",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 10,
+          "images": "/images/market_PleaseImages10.svg",
+          "title": "Desert Walk",
+          "avatar": "/images/avatarMarketplease10.svg",
+          "name": "Catch 22",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 11,
+          "images": "/images/market_PleaseImages11.svg",
+          "title": "IceCream Ape 0324",
+          "avatar": "/images/avatarMarketplease11.svg",
+          "name": "Ice Ape Club",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 12,
+          "images": "/images/market_PleaseImages12.svg",
+          "title": "Colorful Dog 0344",
+          "avatar": "/images/avatarMarketplease12.svg",
+          "name": "PuppyPower",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        }
+      ]
+    },
+    {
+      "value": "2",
+      "label": "Collections",
+      "desc": [
+        {
+          "id": 1,
+          "images": "/images/market_PleaseImages.svg",
+          "title": "Magic Mushroom 0325",
+          "avatar": "/images/avatarMarketplease.svg",
+          "name": "Shroomie",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 2,
+          "images": "/images/market_PleaseImages2.svg",
+          "title": "Happy Robot 032",
+          "avatar": "/images/avatarMarketplease2.svg",
+          "name": "BeKind2Robots",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 3,
+          "images": "/images/market_PleaseImages3.svg",
+          "title": "Happy Robot 024",
+          "avatar": "/images/avatarMarketplease2.svg",
+          "name": "BeKind2Robots",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 4,
+          "images": "/images/market_PleaseImages4.svg",
+          "title": "Designer Bear",
+          "avatar": "/images/avatarMarketplease4.svg",
+          "name": "Mr Fox",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 5,
+          "images": "/images/market_PleaseImages5.svg",
+          "title": "Colorful Dog 0356",
+          "avatar": "/images/avatarMarketplease5.svg",
+          "name": "Keepitreal",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 6,
+          "images": "/images/market_PleaseImages6.svg",
+          "title": "Dancing Robot 0312",
+          "avatar": "/images/avatarMarketplease6.svg",
+          "name": "Robotica",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 7,
+          "images": "/images/market_PleaseImages7.svg",
+          "title": "Cherry Blossom Girl 035",
+          "avatar": "/images/avatarMarketplease7.svg",
+          "name": "MoonDancer",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 8,
+          "images": "/images/market_PleaseImages8.svg",
+          "title": "Space Travel",
+          "avatar": "/images/avatarMarketplease8.svg",
+          "name": "NebulaKid",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 9,
+          "images": "/images/market_PleaseImages9.svg",
+          "title": "Sunset Dimension",
+          "avatar": "/images/avatarMarketplease9.svg",
+          "name": "Animakid",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 10,
+          "images": "/images/market_PleaseImages10.svg",
+          "title": "Desert Walk",
+          "avatar": "/images/avatarMarketplease10.svg",
+          "name": "Catch 22",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 11,
+          "images": "/images/market_PleaseImages11.svg",
+          "title": "IceCream Ape 0324",
+          "avatar": "/images/avatarMarketplease11.svg",
+          "name": "Ice Ape Club",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        },
+        {
+          "id": 12,
+          "images": "/images/market_PleaseImages12.svg",
+          "title": "Colorful Dog 0344",
+          "avatar": "/images/avatarMarketplease12.svg",
+          "name": "PuppyPower",
+          "simple_word": "Price",
+          "rate": "Highest Bid",
+          "price": 1.63,
+          "weth": 0.33
+        }
+      ]
     }
   ]
 }

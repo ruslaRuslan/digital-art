@@ -13,12 +13,18 @@ export default function Example(): JSX.Element {
       <nav className="container px-10">
         <div className="flex items-center justify-between">
           <div className="flex">
-            <img alt="" src={Data.imageMarketplease} />
-            <p className="pt-1">{Data.MarketplaceTitle}</p>
+            <img src={Data.imageMarketplease} alt="" className="h-[45px]" />
+            {Data.explore.slice(0, 1).map((element) => {
+              return (
+                <NavLinkComponents key={element.id} to={element.href}>
+                  {element.title}
+                </NavLinkComponents>
+              );
+            })}
           </div>
           <div className="min-[0px]:hidden md:hidden lg:block sm:hidden">
             <div className="flex gap-10 relative">
-              {Data.explore.map(({ id, title, href, images }) => {
+              {Data.explore.slice(1).map(({ id, title, href, images }) => {
                 return (
                   <NavLinkComponents key={id} to={href}>
                     <div className="flex">
@@ -67,14 +73,21 @@ export default function Example(): JSX.Element {
           }}
         >
           <div className="flex items-center justify-between">
-            <div className="-m-1.5 p-1.5 flex items-center  ">
+            <div className="-m-1.5 p-1.5 flex items-center gap-1  ">
               <img
                 alt=""
                 src={Data.imageMarketplease}
                 className="h-8 w-auto md:hidden sm:hidden"
               />
-              <p className="md:hidden sm:hidden">{Data.MarketplaceTitle}</p>
+              {Data.explore.slice(0, 1).map((element) => {
+                return (
+                  <div key={element.id}>
+                    <a href={element.href}>{element.title}</a>
+                  </div>
+                );
+              })}
             </div>
+
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
@@ -86,7 +99,7 @@ export default function Example(): JSX.Element {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className=" flex flex-col mt-7">
-                {Data.explore.map(({ id, title, href, images }) => {
+                {Data.explore.slice(1).map(({ id, title, href, images }) => {
                   return (
                     <NavLinkForPhoneComponents key={id} to={href}>
                       <div className="flex">

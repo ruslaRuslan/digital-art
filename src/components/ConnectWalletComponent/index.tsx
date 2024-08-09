@@ -26,10 +26,13 @@ const ConnectWalletComponent = () => {
               return (
                 <div
                   key={element.id}
-                  className="mt-8 bg-[#3B3B3B] lg:w-[330px] md:w-[330px] sm:w-[330px] flex items-center gap-3 lg:p-4 md:p-3 sm:p-2 xs:p-2 xs:w-[100%] border-[1px] border-[#A259FF] rounded-[15px]"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
                 >
-                  <img src={element.avatar} />
-                  <p className="text-[18px] font-semibold	">{element.title}</p>
+                  <div className="mt-8 bg-[#3B3B3B] lg:w-[330px] md:w-[330px] sm:w-[330px] flex items-center gap-3 lg:p-4 md:p-3 sm:p-2 xs:p-2 xs:w-[100%] border-[1px] border-[#A259FF] rounded-[15px]">
+                    <img src={element.avatar} />
+                    <p className="text-[18px] font-semibold">{element.title}</p>
+                  </div>
                 </div>
               );
             })}
