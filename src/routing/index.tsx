@@ -6,6 +6,7 @@ import SignUp from "../pages/sign-up/page";
 import ArtistPage from "../pages/artist-page/page";
 import MarketPlease from "../pages/market-please/page";
 import NftPage from "../pages/nft-page/page";
+import NotFound404 from "../pages/not-found/page";
 
 const Routing = () => {
   return (
@@ -18,6 +19,7 @@ const Routing = () => {
         <Route path="/artist-page" element={<ArtistPage />} />
         <Route path="/market-please" element={<MarketPlease />} />
         <Route path="/nft-page" element={<NftPage />} />
+        <Route path="/not-found-404" element={<NotFound404 />} />
       </Routes>
     </>
   );

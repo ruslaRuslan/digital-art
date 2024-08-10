@@ -22,33 +22,18 @@ const ArtistPageComponent = () => {
                 className="w-[13rem]"
               />
             </div>
-            <div className=" lg:items-end lg:flex lg:justify-between md:block sm:flex sm:justify-center xs:justify-center lg:ml-0 md:ml-0 sm:ml-0 xs:ml-12  ">
+            <div className=" lg:items-end lg:flex lg:justify-between md:block sm:flex sm:justify-center xs:justify-center xs:flex-col md:flex-row lg:ml-0 md:ml-0 sm:ml-0 xs:ml-12 xs:items-center  ">
               <h1 className="text-[52px] font-semibold ">Animakid</h1>
-              <div className="gap-3 pt-[1rem] lg:flex md:flex mb-4">
-                <div>
+              <div className="xs:w-[80%] sm:w-[unset] gap-3 pt-[1rem] lg:flex md:flex mb-4">
+                <div className="flex-1">
                   <CopyLinkComponent />
                 </div>
-                <div>
-                  <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
+                <div className="flex-1">
+                  <button className="w-[100%] flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 md:flex ">
                     <img src="/images/plus1.svg" />
                     <p className="font-semibold">Follow</p>
                   </button>
                 </div>
-              </div>
-            </div>
-
-            <div className="md-3  mb-5 lg:hidden md:hidden sm:flex sm:gap-5 xs:block ">
-              <div>
-                <button className=" flex items-center gap-4 py-2 px-[6rem]   hover:bg-transparent mt-7 bg-purple-700 active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ...  rounded-2xl duration-500 border-2 border-purple-700   ">
-                  <img src="/images/copy.svg" />
-                  <p className="font-semibold">0xc0E3...B79C</p>
-                </button>
-              </div>
-              <div>
-                <button className="flex items-center gap-4 py-[7px] px-[7.8rem]  hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ...  rounded-2xl duration-500 border-2 border-purple-700">
-                  <img src="/images/plus1.svg" />
-                  <p className="font-semibold">Follow</p>
-                </button>
               </div>
             </div>
 
