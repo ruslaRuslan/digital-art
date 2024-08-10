@@ -1,4 +1,5 @@
 import Data from "../../Data.json";
+import CopyLinkComponent from "../CopyLinkComponent";
 import { TabsDefaultComponent2 } from "../TabsDefaultComponent2";
 const ArtistPageComponent = () => {
   return (
@@ -25,10 +26,7 @@ const ArtistPageComponent = () => {
               <h1 className="text-[52px] font-semibold ">Animakid</h1>
               <div className="gap-3 pt-[1rem] lg:flex md:flex mb-4">
                 <div>
-                  <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-transparent mt-7 bg-purple-700 active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
-                    <img src="/images/copy.svg" />
-                    <p className="font-semibold">0xc0E3...B79C</p>
-                  </button>
+                  <CopyLinkComponent />
                 </div>
                 <div>
                   <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
@@ -87,6 +85,7 @@ const ArtistPageComponent = () => {
           </div>
         </div>
       </section>
+
       <TabsDefaultComponent2 />
     </>
   );

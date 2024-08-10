@@ -279,7 +279,7 @@
       "wt": "0.33 wETH"
     },
     {
-      "id": 8,
+      "id": 9,
       "images": "/images/categoryIconBg2.svg",
       "title": "AstroFiction",
       "icons": "/images/icon3.svg",
@@ -1713,6 +1713,107 @@
           "weth": 0.33
         }
       ]
+    }
+  ],
+  "nft_Page": [
+    {
+      "id": 1,
+      "images": "/images/nft.svg",
+      "title": "Distant Galaxy",
+      "icons": "/images/icon.svg",
+      "user": "MoonDancer",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.72,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 2,
+      "images": "/images/nft2.svg",
+      "title": "Life On Edena",
+      "icons": "/images/icon2.svg",
+      "user": "NebulaKid",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.81,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 3,
+      "images": "/images/nft3.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 4,
+      "images": "/images/nft4.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 5,
+      "images": "/images/nft5.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 6,
+      "images": "/images/artist_page8.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 7,
+      "images": "/images/nft7.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 8,
+      "images": "/images/nft8.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
+    },
+    {
+      "id": 9,
+      "images": "/images/nft9.svg",
+      "title": "AstroFiction",
+      "icons": "/images/icon3.svg",
+      "user": "Spaceone",
+      "wordPrice": "Price",
+      "rates": "Highest Bid",
+      "price": 1.63,
+      "wt": "0.33 wETH"
     }
   ]
 }

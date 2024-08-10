@@ -66,7 +66,7 @@ const NftPageComponent = () => {
               })}
             </div>
             <div className="mt-5">
-              <p className="text-[#858584] font-extrabold		 ">Tags</p>
+              <p className="text-[#858584] font-extrabold">Tags</p>
 
               <div className=" lg:flex md:block sm:block xs:block gap-2">
                 <button className="flex items-center gap-4  px-10 hover:pl-12 hover:bg-purple-700 mt-7 bg-[#3B3B3B] active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-3xl  duration-500  border-purple-700 font-semibold ">
@@ -93,6 +93,59 @@ const NftPageComponent = () => {
           </div>
         </div>
       </section>
+
+      <footer className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 mb-8 ">
+        <div className="flex items-end justify-between">
+          <h2 className="text-[38px] font-semibold	">More from this artist</h2>
+          <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
+            <img src="/images/arrow-right1.svg" />
+            <p className="font-semibold">Go To Artist Page</p>
+          </button>
+        </div>
+        <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-16">
+          {Data.nft_Page.map(
+            ({
+              id,
+              images,
+              title,
+              icons,
+              user,
+              wordPrice,
+              rates,
+              price,
+              wt,
+            }) => {
+              return (
+                <div
+                  key={id}
+                  data-aos="zoom-out-down"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000"
+                >
+                  <div className="mt-8 bg-[#3B3B3B] rounded-[20px]">
+                    <img src={images} className="w-full object-cover" />
+                    <div className="p-5">
+                      <p className="text-xl	font-semibold">{title}</p>
+                      <div className="flex items-end gap-3">
+                        <img className="mt-4" src={icons} />
+                        <p>{user}</p>
+                      </div>
+                      <div className="flex items-center justify-between mt-3 text-[#858584]">
+                        <p>{wordPrice}</p>
+                        <p>{rates}</p>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <p>{price} ETH</p>
+                        <p>{wt}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+          )}
+        </div>
+      </footer>
     </>
   );
 };
