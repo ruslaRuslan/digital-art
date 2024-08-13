@@ -19,7 +19,7 @@ const Routing = () => {
         <Route path="/artist-page/:id" element={<ArtistPage />} />
         <Route path="/market-please" element={<MarketPlease />} />
         <Route path="/nft-page" element={<NftPage />} />
-        <Route path="/not-found-404" element={<NotFound404 />} />
+        <Route path="/*" element={<NotFound404 />} />
       </Routes>
     </>
   );
