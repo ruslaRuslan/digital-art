@@ -75,5 +75,4 @@ const NotFount = () => {
     </>
   );
 };
-
 export default NotFount;
