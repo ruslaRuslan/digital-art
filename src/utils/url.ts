@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5467/"
+const BASE_URL = "https://nft-backend-json.vercel.app/"
 
 export const getImageMarketplease = async () => {
     return await fetch(BASE_URL.concat("imageMarketplease"))
