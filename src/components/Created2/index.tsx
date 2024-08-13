@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TodayComponent3 = ({ props }: any) => {
   return (
     <>
@@ -27,7 +29,7 @@ const TodayComponent3 = ({ props }: any) => {
                         <p className="text-xl	font-semibold">{title}</p>
                         <div className="flex items-end gap-3">
                           <img className="mt-3" src={avatar} />
-                          <p>{name}</p>
+                          <Link to={`/nft-page`}>{name}</Link>
                         </div>
                         <div className="flex items-center justify-between mt-3 text-[#858584]">
                           <p>{simple_word}</p>

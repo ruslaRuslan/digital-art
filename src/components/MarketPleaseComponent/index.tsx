@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { TabsDefaultComponent3 } from "../TabsDefaultComponent3";
 const MarketPleaseComponent = () => {
+  const [search, setSearch] = useState<string>();
+
   return (
     <>
       <header className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 ">
@@ -12,6 +15,9 @@ const MarketPleaseComponent = () => {
           <div className="flex">
             <div className="relative w-full mt-6">
               <input
+                onChange={(event) => {
+                  setSearch(event.target.value.toLowerCase());
+                }}
                 type="text"
                 id="text"
                 className="block p-2.5 w-full dark:border-[#3B3B3B]  text-sm text-gray-[#fff] bg-[transparent] rounded-[1rem]   border border-[#3B3B3B]  dark:placeholder-[#858584]           
@@ -35,9 +41,9 @@ const MarketPleaseComponent = () => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                   />
                 </svg>
@@ -46,7 +52,7 @@ const MarketPleaseComponent = () => {
           </div>
         </form>
       </header>
-      <TabsDefaultComponent3 />
+      <TabsDefaultComponent3 search={search as string} />
     </>
   );
 };

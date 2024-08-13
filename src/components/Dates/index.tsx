@@ -1,9 +1,20 @@
+import { Link } from "react-router-dom";
+
+interface IRanking {
+  id: number;
+  count: number;
+  avatar: string;
+  name: string;
+  percent: string;
+  sold: number;
+  volume: number;
+}
 const TodayComponent = ({ props }: any) => {
   return (
     <>
       <div>
         {props.map(
-          ({ id, count, avatar, name, percent, sold, volume }: any) => {
+          ({ id, count, avatar, name, percent, sold, volume }: IRanking) => {
             return (
               <div
                 key={id}
@@ -21,7 +32,7 @@ const TodayComponent = ({ props }: any) => {
                   </div>
                   <img className="ml-9 w-[65px]" src={avatar} />
                   <h2 className=" lg:font-semibold lg:text-[22px] sm:font-medium sm:text-[16px] xs:text-[16px] xs:font-medium">
-                    {name}
+                    <Link to={`/artist-page/${id}`}>{name}</Link>
                   </h2>
                 </div>
                 <p className=" text-[#00AC4F] lg:block md:block sm:hidden xs:hidden">

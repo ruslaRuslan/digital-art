@@ -1,5 +1,15 @@
-import Data from "../../Data.json";
+import { useState } from "react";
+import { getConnect_wallet } from "../../utils/url";
+interface IConnect_wallet {
+  id: number;
+  avatar: string;
+  title: string;
+}
 const ConnectWalletComponent = () => {
+  const [connect_wallet, setConnect_wallet] = useState<IConnect_wallet[]>([]);
+  getConnect_wallet().then((data) => {
+    setConnect_wallet(data);
+  });
   return (
     <>
       <div className=" lg:mb-10 xs:mb-6 h-[100%] container justify-center m-auto grid lg:grid-cols-2 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-2 xs:grid-cols-1 xs:grid-rows-1 gap-16 mt-8 ">
@@ -7,6 +17,7 @@ const ConnectWalletComponent = () => {
           <img
             className="w-[100%] lg:h-auto md:h-[500px] overflow-auto"
             src="/images/connet.svg"
+            alt=""
           />
         </div>
         <div className="lg:pt-12 md:pt-0">
@@ -22,16 +33,12 @@ const ConnectWalletComponent = () => {
             </p>
           </div>
           <div>
-            {Data.connect_wallet.map((element) => {
+            {connect_wallet.map(({ id, avatar, title }) => {
               return (
-                <div
-                  key={element.id}
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                >
+                <div key={id} data-aos="fade-up" data-aos-duration="2000">
                   <div className="mt-8 bg-[#3B3B3B] lg:w-[330px] md:w-[330px] sm:w-[330px] flex items-center gap-3 lg:p-4 md:p-3 sm:p-2 xs:p-2 xs:w-[100%] border-[1px] border-[#A259FF] rounded-[15px]">
-                    <img src={element.avatar} />
-                    <p className="text-[18px] font-semibold">{element.title}</p>
+                    <img src={avatar} alt="" />
+                    <p className="text-[18px] font-semibold">{title}</p>
                   </div>
                 </div>
               );

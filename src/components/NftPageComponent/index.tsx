@@ -1,6 +1,36 @@
-import Data from "../../Data.json";
+import { useEffect, useState } from "react";
+import { getFooterLogo, getNft_Page } from "../../utils/url";
+import Countdown from "../Oclock2";
+interface IFooterLogo2 {
+  id: number;
+  icons: string;
+}
+
+interface INft_Page {
+  id: number;
+  images: string;
+  title: string;
+  icons: string;
+  user: string;
+  wordPrice: string;
+  rates: string;
+  price: number;
+  wt: string;
+}
 
 const NftPageComponent = () => {
+  const [footerLogo, setFooterLogo] = useState<IFooterLogo2[]>([]);
+  const [nft_Page, setNft_Page] = useState<INft_Page[]>([]);
+
+  useEffect(() => {
+    getFooterLogo().then((data) => {
+      setFooterLogo(data);
+    });
+    getNft_Page().then((data) => {
+      setNft_Page(data);
+    });
+  }, []);
+
   return (
     <>
       <header>
@@ -15,12 +45,10 @@ const NftPageComponent = () => {
           <div>
             <h1 className="text-[40px] font-semibold	">The Orbitians</h1>
             <p className="text-[#858584]">Minted on Sep 30, 2022</p>
+            <div className=" sm:my-3 xs:my-3 lg:hidden md:hidden sm:block xs:block ">
+              <Countdown endTime={new Date(2024, 8, 2)} />
+            </div>
 
-            <img
-              src="/images/gobelek.png"
-              alt=""
-              className=" sm:my-3 xs:my-3 lg:hidden md:hidden sm:block xs:block "
-            />
             <div className=" my-3 flex gap-2 items-center">
               <img
                 src="/images/rankingsAvatar16.svg"
@@ -50,15 +78,15 @@ const NftPageComponent = () => {
             </p>
             <div>
               <p className="mb-2 text-[#858584]">Details</p>
-              {Data.footerLogo.slice(0, 1).map((element) => {
+              {footerLogo.slice(0, 1).map(({ id, icons }) => {
                 return (
-                  <div key={element.id}>
+                  <div key={id}>
                     <div className="flex items-center gap-3">
-                      <img src={element.icons} alt="" />
-                      <p>View on Etherscan</p>
+                      <img src={icons} alt="" />
+                      <p>View on Etherscan </p>
                     </div>
                     <div className="flex items-center gap-3 mt-2">
-                      <img src={element.icons} alt="" />
+                      <img src={icons} alt="" />
                       <p>View Original</p>
                     </div>
                   </div>
@@ -84,12 +112,8 @@ const NftPageComponent = () => {
               </div>
             </div>
           </div>
-          <div>
-            <img
-              src="/images/gobelek.png"
-              alt=""
-              className="lg:block md:block sm:hidden xs:hidden"
-            />
+          <div className="lg:block md:block sm:hidden xs:hidden">
+            <Countdown endTime={new Date(2024, 9, 2)} />
           </div>
         </div>
       </section>
@@ -98,12 +122,14 @@ const NftPageComponent = () => {
         <div className="flex items-end justify-between">
           <h2 className="text-[38px] font-semibold	">More from this artist</h2>
           <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
-            <img src="/images/arrow-right1.svg" />
-            <p className="font-semibold">Go To Artist Page</p>
+            <img src="/images/arrow-right1.svg" alt="" />
+            <a href={`/artist-page/1`} className="font-semibold">
+              Go To Artist Page
+            </a>
           </button>
         </div>
         <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-16">
-          {Data.nft_Page.map(
+          {nft_Page.map(
             ({
               id,
               images,
@@ -123,11 +149,11 @@ const NftPageComponent = () => {
                   data-aos-duration="1000"
                 >
                   <div className="mt-8 bg-[#3B3B3B] rounded-[20px]">
-                    <img src={images} className="w-full object-cover" />
+                    <img src={images} alt="" className="w-full object-cover" />
                     <div className="p-5">
                       <p className="text-xl	font-semibold">{title}</p>
                       <div className="flex items-end gap-3">
-                        <img className="mt-4" src={icons} />
+                        <img className="mt-4" src={icons} alt="" />
                         <p>{user}</p>
                       </div>
                       <div className="flex items-center justify-between mt-3 text-[#858584]">

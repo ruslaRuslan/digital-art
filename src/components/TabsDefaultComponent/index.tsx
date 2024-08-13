@@ -1,6 +1,5 @@
-import { useState } from "react";
-import Data from "../../Data.json";
-
+import { useEffect, useState } from "react";
+import { getRankings } from "../../utils/url";
 import {
   Tabs,
   TabsHeader,
@@ -10,7 +9,30 @@ import {
 } from "@material-tailwind/react";
 import Dates from "../Dates";
 
+interface DescInterface {
+  id: number;
+  count: number;
+  avatar: string;
+  name: string;
+  percent: string;
+  sold: number;
+  volume: number;
+}
+
+interface InterfaceTankings {
+  label: string;
+  value: string;
+  desc: DescInterface[];
+}
 export function TabsDefaultComponent() {
+  const [rankings, setRankings] = useState<InterfaceTankings[]>([]);
+
+  useEffect(() => {
+    getRankings().then((data) => {
+      setRankings(data);
+    });
+  }, []);
+
   const [activeTab, setActiveTab] = useState("1");
   const _TabsHeader: any = TabsHeader as any;
   const _Tab: any = Tab as any;
@@ -24,7 +46,7 @@ export function TabsDefaultComponent() {
             "bg-transparent border-b border-[#858584] shadow-none rounded-none  mt-2 ",
         }}
       >
-        {Data.rankings.map(({ label, value }) => (
+        {rankings.map(({ label, value }) => (
           <_Tab
             key={value}
             value={value}
@@ -51,7 +73,7 @@ export function TabsDefaultComponent() {
         </div>
       </div>
       <_TabsBody>
-        {Data.rankings.map(({ value, desc }) => (
+        {rankings.map(({ value, desc }) => (
           <TabPanel key={value} value={value} className="mt-8 text-[#fff]">
             <Dates props={desc} />
           </TabPanel>

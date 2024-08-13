@@ -1,5 +1,44 @@
-import Data from "../../Data.json";
+import { useEffect, useState } from "react";
+import {
+  getExplore,
+  getFooterLogo,
+  getImageMarketplease,
+} from "../../utils/url";
+
+interface IGetImageMarketplease {
+  id: number;
+  image: string;
+}
+interface IExplore {
+  id: number;
+  title: string;
+  href: string;
+  images: string;
+}
+interface IFooterLogo {
+  id: number;
+  href: string;
+  icons: string;
+}
+
 const Footer = () => {
+  const [imageMarketplease, setImageMarketplease] = useState<
+    IGetImageMarketplease[]
+  >([]);
+  const [explore, setExplore] = useState<IExplore[]>([]);
+  const [footerLogo, setFooterLogo] = useState<IFooterLogo[]>([]);
+
+  useEffect(() => {
+    getImageMarketplease().then((data) => {
+      setImageMarketplease(data);
+    });
+    getExplore().then((data) => {
+      setExplore(data);
+    });
+    getFooterLogo().then((data) => {
+      setFooterLogo(data);
+    });
+  }, []);
   return (
     <>
       <section className="bg-[#3B3B3B]  md:pr-20 lg:p-0">
@@ -7,8 +46,12 @@ const Footer = () => {
           <div className="container p-8 rounded-2xl items-start justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols- sm:grid-cols-1 sm:row-span-3 xs:grid-cols-1 lg:gap-16 md:gap-12 xs:gap-3">
             <div>
               <div className="flex gap-2 items-center">
-                <img src={Data.imageMarketplease} />
-                {Data.explore.slice(0, 1).map(({ id, title, href }) => {
+                {imageMarketplease.map(({ id, image }) => {
+                  return (
+                    <img key={id} src={image} alt="" className="h-[45px]" />
+                  );
+                })}
+                {explore.slice(0, 1).map(({ id, title, href }) => {
                   return (
                     <div key={id}>
                       <a href={href}>{title}</a>
@@ -22,10 +65,10 @@ const Footer = () => {
                 </h2>
                 <p className="mt-3 mb-3">Join our community</p>
                 <div className="flex items-center gap-2">
-                  {Data.footerLogo.slice(1).map((element) => {
+                  {footerLogo.slice(1).map(({ id, href, icons }) => {
                     return (
-                      <a target="_blank" key={element.id} href={element.href}>
-                        <img src={element.icons} />
+                      <a target="_blank" key={id} href={href}>
+                        <img src={icons} alt="" />
                       </a>
                     );
                   })}
@@ -35,7 +78,7 @@ const Footer = () => {
             <div>
               <h2 className="text-xl">Explore</h2>
               <div className="flex flex-col gap-1">
-                {Data.explore.slice(1).map(({ id, title, href }) => {
+                {explore.slice(1).map(({ id, title, href }) => {
                   return (
                     <a className="mt-3 text-[#CCCCCC]" key={id} href={href}>
                       {title}
@@ -60,18 +103,12 @@ const Footer = () => {
                   placeholder="Enter your email here"
                   required
                 />
+
                 <button
                   type="submit"
-                  className="mt-5 lg:hidden  md:hidden sm:flex gap-2 justify-center  sm:py-[15px] xs:flex xs:gap-2 xs:justify-center xs:py-[10px] rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem]  focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm w-[100%] sm:w-full text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 "
+                  className=" lg:mt-0 md:mt-0 sm:mt-2 xs:mt-2  sm:py-[15px]  xs:gap-2 xs:justify-center xs:py-[10px] gap-2 lg:-ml-12 md:-ml-12 sm:ml-0 lg:flex lg:py-[21px]  md:flex   md:py-4   sm:flex sm:w-full xs:flex lg:w-auto md:w-auto xs:w-full  rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem] md:hover:px-[2.5rem]   focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm   lg:px-9  py-[21px] text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 md:px-8 md:pl-[2rem]"
                 >
-                  <img src="/images/messageIcon.svg" />
-                  <p className="font-semibold	">Subscribe</p>
-                </button>
-                <button
-                  type="submit"
-                  className="gap-2 -ml-12 lg:flex lg:py-[21px]  md:flex   md:py-4   sm:hidden xs:hidden  rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem] md:hover:px-[2.5rem]   focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm  sm:w-auto lg:px-9  py-[21px] text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 md:px-8 md:pl-[2rem]"
-                >
-                  <img src="/images/messageIcon.svg" />
+                  <img src="/images/messageIcon.svg" alt="" />
                   <p className="font-semibold	">Subscribe</p>
                 </button>
               </form>

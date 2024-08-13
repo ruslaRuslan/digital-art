@@ -1,5 +1,10 @@
 {
-  "imageMarketplease": "/images/storefront.png",
+  "imageMarketplease": [
+    {
+      "id": 1,
+      "image": "/images/storefront.png"
+    }
+  ],
 
   "explore": [
     { "id": 1, "title": " NFT Marketplace", "href": "/" },
@@ -53,7 +58,7 @@
       "avatarName": "BeKind2Robots"
     }
   ],
-  "TopCreators": [
+  "topCreators": [
     {
       "id": 1,
       "count": 1,
@@ -1115,7 +1120,7 @@
           "wordPrice": "Price",
           "rates": "Highest Bid",
           "price": 1.72,
-          "wt": "0.33 wETH"
+          "wt": "0.33 wETH  "
         },
         {
           "id": 2,

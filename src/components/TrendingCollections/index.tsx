@@ -1,68 +1,34 @@
-"use client";
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import Data from "../../Data.json";
+import { useEffect, useState } from "react";
+import { getTrendingCollection } from "../../utils/url";
 
-function Section({ children }: any) {
-  return (
-    <section>
-      <span>{children}</span>
-    </section>
-  );
-}
-
-function getXValue(i: number) {
-  switch (i) {
-    case 0:
-      return -100;
-    case 1:
-      return 0;
-    case 2:
-      return 100;
-    default:
-      return 0;
-  }
-}
-
-function getYValue(i: number) {
-  switch (i) {
-    case 0:
-      return 0;
-    case 1:
-      return -100;
-    case 2:
-      return 0;
-    default:
-      return 0; // Safety default
-  }
+interface ITrendingCollection {
+  id: number;
+  collections: string;
+  title: string;
+  avatar: string;
+  avatarName: string;
 }
 
 export default function TrendingCollections() {
+  const [trendingCollection, setTrendingCollection] = useState<
+    ITrendingCollection[]
+  >([]);
+  useEffect(() => {
+    getTrendingCollection().then((data) => {
+      setTrendingCollection(data);
+    });
+  }, []);
   return (
     <>
-      <Section>
-        <div className="flex flex-wrap justify-center gap-8">
-          {Data.trendingCollection.map(
-            ({ id, collections, title, avatar, avatarName }, i) => {
-              const ref = useRef(null);
-              const isInView = useInView(ref, { once: true, amount: 0.2 });
-
-              return (
-                <motion.div
-                  ref={ref}
-                  initial={{
-                    x: getXValue(i),
-                    opacity: 0,
-                    y: getYValue(i),
-                  }}
-                  animate={{
-                    x: isInView ? 0 : getXValue(i),
-                    opacity: isInView ? 1 : 0,
-                    y: isInView ? 0 : getYValue(i),
-                  }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  key={id}
-                  className="max-w-sm "
+      <div className="flex flex-wrap justify-center gap-8">
+        {trendingCollection.map(
+          ({ id, collections, title, avatar, avatarName }) => {
+            return (
+              <div key={id} className="max-w-sm ">
+                <div
+                  data-aos="flip-up"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   <div className="flex rounded-lg h-full flex-col">
                     <div className="flex flex-col justify-between flex-grow">
@@ -74,12 +40,12 @@ export default function TrendingCollections() {
                       <p>{avatarName}</p>
                     </div>
                   </div>
-                </motion.div>
-              );
-            }
-          )}
-        </div>
-      </Section>
+                </div>
+              </div>
+            );
+          }
+        )}
+      </div>
     </>
   );
 }

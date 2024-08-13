@@ -1,11 +1,87 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Data from "../../Data.json";
 import styles from "../../styles.module.css";
 import Countdown from "../Oclock";
 import TrendingCollections from "../TrendingCollections";
+import {
+  getCategories,
+  getDiscoverMore,
+  getHowItWorksIcon,
+  getStatistics,
+  getTopCreators,
+} from "../../utils/url";
+
+interface IStatic {
+  id: number;
+  title: string;
+  count: string;
+}
+
+interface ITopCreators {
+  id: number;
+  count: number;
+  avatar: string;
+  username: string;
+  price: number;
+}
+
+interface ICategories {
+  id: number;
+  images: string;
+  iconHover: string;
+  title: string;
+}
+
+interface IDiscoverMore {
+  id: number;
+  images: string;
+  title: string;
+  icons: string;
+  user: string;
+  wordPrice: string;
+  rates: string;
+  price: number;
+  wt: string;
+}
+
+interface IHowItWorksIcon {
+  id: number;
+  images: string;
+  title: string;
+  text: string;
+}
 
 const HomeComponent = () => {
-  const trendingItem = Data.TopCreators.find((item) => item.id === 7);
+  const [statistics, setStatistics] = useState<IStatic[]>([]);
+
+  const [topCreators, setTopCreators] = useState<ITopCreators[]>([]);
+
+  const trendingItem = topCreators.find((item) => item.id === 7);
+
+  const [categories, setCategories] = useState<ICategories[]>([]);
+
+  const [discoverMore, setDiscoverMore] = useState<IDiscoverMore[]>([]);
+
+  const [howItWorksIcon, setHowItWorksIcon] = useState<IHowItWorksIcon[]>([]);
+
+  useEffect(() => {
+    getStatistics().then((data) => {
+      setStatistics(data);
+    });
+    getTopCreators().then((data) => {
+      setTopCreators(data);
+    });
+    getCategories().then((data) => {
+      setCategories(data);
+    });
+
+    getDiscoverMore().then((data) => {
+      setDiscoverMore(data);
+    });
+    getHowItWorksIcon().then((data) => {
+      setHowItWorksIcon(data);
+    });
+  }, []);
   return (
     <>
       <header className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 ">
@@ -35,11 +111,11 @@ const HomeComponent = () => {
               </p>
               <div className={styles.hideXsStylesModule}>
                 <button className="flex items-center mt-7 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ... p-3 rounded-2xl">
-                  <img src="/images/rocketLaunch.svg" />
+                  <img src="/images/rocketLaunch.svg" alt="" />
                   <p className="font-semibold">Get Started</p>
                 </button>
                 <div className="flex items-center gap-5 mt-8 ">
-                  {Data.statistics.map(({ id, title, count }) => {
+                  {statistics.map(({ id, title, count }) => {
                     return (
                       <div key={id}>
                         <p className="font-bold">{count}</p>
@@ -73,7 +149,7 @@ const HomeComponent = () => {
                     <img
                       src="/images/rocketLaunch2.svg"
                       className=" transition duration-300 ease-in-out hover:scale-110 "
-                      alt="Louvre"
+                      alt=""
                     />
                   </div>
 
@@ -83,7 +159,7 @@ const HomeComponent = () => {
                     </div>
                   </div>
                   <div className="px-6 pt-4 pb-5 flex gap-2">
-                    <img src="/images/animakid.svg" />
+                    <img src="/images/animakid.svg" alt="" />
                     <p>Animakid</p>
                   </div>
                 </div>
@@ -93,11 +169,11 @@ const HomeComponent = () => {
                     <p className="font-semibold">Get Started</p>
                   </button>
                   <div className="flex items-center justify-center gap-5 mt-8 ">
-                    {Data.statistics.map(({ id, title, count }) => {
+                    {statistics.map(({ id, title, count }) => {
                       return (
                         <div key={id}>
                           <p className="font-bold">{count}</p>
-                          <p>{title}</p>
+                          <p className="text-[red] bg-black h-[50%]">{title}</p>
                         </div>
                       );
                     })}
@@ -126,13 +202,13 @@ const HomeComponent = () => {
             </p>
           </div>
           <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 xs:hidden md:flex ">
-            <img src="/images/rankings.svg" />
+            <img src="/images/rankings.svg" alt="" />
             <p className="font-semibold">View Rankings</p>
           </button>
         </div>
 
         <div className="container justify-center m-auto grid lg:grid-cols-4 lg:grid-rows-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 ">
-          {Data.TopCreators.map(({ id, count, avatar, username, price }) => {
+          {topCreators.map(({ id, count, avatar, username, price }) => {
             return (
               <div
                 key={id}
@@ -175,7 +251,7 @@ const HomeComponent = () => {
         </div>
         <div className="flex justify-center lg:hidden md:hidden xs:flex">
           <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700   ">
-            <img src="/images/rankings.svg" />
+            <img src="/images/rankings.svg" alt="" />
             <p className="font-semibold">View Rankings</p>
           </button>
         </div>
@@ -184,7 +260,7 @@ const HomeComponent = () => {
       <section className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8 lg:py-20">
         <h2 className="text-4xl	font-semibold">Browse Categories</h2>
         <div className="container justify-center m-auto grid lg:grid-cols-4 lg:grid-rows-2 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-2 gap-4">
-          {Data.categories.map(({ id, images, iconHover, title }) => {
+          {categories.map(({ id, images, iconHover, title }) => {
             return (
               <div
                 key={id}
@@ -199,12 +275,14 @@ const HomeComponent = () => {
                   >
                     <img
                       src={images}
+                      alt=""
                       className="w-full object-cover rounded-tl-[inherit] rounded-tr-[inherit]"
                     />
                     <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl font-bold opacity-0 group-hover:opacity-100  duration-1000   rounded-tl-[inherit] rounded-tr-[inherit] backdrop-blur-[5px]">
                       <img
                         className=" rounded-tl-[inherit] rounded-tr-[inherit]"
                         src={iconHover}
+                        alt=""
                       />
                     </div>
                   </div>
@@ -233,13 +311,13 @@ const HomeComponent = () => {
             data-aos-duration="2000"
           >
             <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-transparent active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2 border-purple-700 md:flex xs:hidden">
-              <img src="/images/eye.svg" />
+              <img src="/images/eye.svg" alt="" />
               <p className="font-semibold">See All</p>
             </button>
           </div>
         </div>
         <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-16">
-          {Data.discoverMore
+          {discoverMore
             .slice(0, 3)
             .map(
               ({
@@ -261,11 +339,15 @@ const HomeComponent = () => {
                     data-aos-duration="2000"
                   >
                     <div className="mt-8 bg-[#3B3B3B] rounded-[20px]">
-                      <img src={images} className="w-full object-cover" />
+                      <img
+                        src={images}
+                        alt=""
+                        className="w-full object-cover"
+                      />
                       <div className="p-5">
                         <p className="text-xl	font-semibold">{title}</p>
                         <div className="flex items-end gap-3">
-                          <img className="mt-4" src={icons} />
+                          <img className="mt-4" src={icons} alt="" />
                           <p>{user}</p>
                         </div>
                         <div className="flex items-center justify-between mt-3 text-[#858584]">
@@ -299,7 +381,7 @@ const HomeComponent = () => {
               data-aos-duration="2000"
             >
               <div className="mb-5 rounded-3xl	py-2 px-4 inline-flex items-center gap-2 bg-[#2B2B2B]">
-                <img className="w-6 flex" src={trendingItem?.avatar} />
+                <img className="w-6 flex" src={trendingItem?.avatar} alt="" />
                 <p className="">{trendingItem?.username}</p>
               </div>
             </div>
@@ -312,7 +394,7 @@ const HomeComponent = () => {
                 <div className={styles.bottom1025}>
                   <h2 className="font-semibold	text-5xl">Magic Mashrooms</h2>
                   <button className="flex items-center gap-4 pl-8 pr-10 hover:pl-10 hover:pr-12  mt-7 bg-slate-100 active:bg-violet-800 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500 border-2  xs:hidden md:flex ">
-                    <img src="/images/eye.svg" />
+                    <img src="/images/eye.svg" alt="" />
                     <p className="font-semibold text-black">See All</p>
                   </button>
                 </div>
@@ -324,7 +406,7 @@ const HomeComponent = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="2000"
                 >
-                  <Countdown endTime={new Date(2024, 9, 9)} />
+                  <Countdown endTime={new Date(2024, 8, 1)} />
                 </div>
               </div>
               <div className="flex lg:hidden md:hidden xs:flex mb-6">
@@ -334,7 +416,7 @@ const HomeComponent = () => {
                   data-aos-duration="2000"
                 >
                   <button className="flex items-center gap-4 text-black	 pl-8 pr-10 hover:pl-10 hover:pr-12 hover:bg-purple-700 mt-7 bg-slate-100 active:bg-violet-400 focus:outline-none focus:ring focus:ring-purple-700 ... p-3 rounded-2xl duration-500    ">
-                    <img src="/images/eye.svg" />
+                    <img src="/images/eye.svg" alt="" />
                     <p className="font-semibold">See All</p>
                   </button>
                 </div>
@@ -347,7 +429,7 @@ const HomeComponent = () => {
         <h2 className="text-3xl	">How it works</h2>
         <p className="text-lg	">Find out how to get started</p>
         <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-16 mt-8 ">
-          {Data.howItWorksIcon.map(({ id, images, title, text }) => {
+          {howItWorksIcon.map(({ id, images, title, text }) => {
             return (
               <div
                 key={id}
@@ -358,7 +440,7 @@ const HomeComponent = () => {
                 <div className="transform  transition duration-500 hover:scale-[1.1] flex justify-center items-center">
                   <div className="rounded-3xl lg:block md:block xs:flex lg:h-[420px] md:h-96 xs:h-auto bg-[#3B3B3B] ">
                     <div className="flex justify-center">
-                      <img src={images} />
+                      <img src={images} alt="" />
                     </div>
                     <div className="lg:px-10 md:px-10, xs:px-2 lg:pb-8 md:pb-2 xs:pb-5 lg:text-center md:text-center xs:text-start  ">
                       <h2 className="text-2xl font-semibold	 lg:mt-0 md:mt-0 xs:mt-9">
@@ -383,7 +465,7 @@ const HomeComponent = () => {
           >
             <div className="w-full flex items-center justify-center p-2">
               <div className="transform  transition duration-500 hover:scale-110 flex justify-center items-center">
-                <img src="/images/photoInCosmos.svg" />
+                <img src="/images/photoInCosmos.svg" alt="" />
               </div>
             </div>
           </div>
@@ -412,7 +494,7 @@ const HomeComponent = () => {
                   type="submit"
                   className="mt-5 lg:hidden md:flex md:justify-center md:gap-2 sm:flex gap-2 justify-center md:py-[15px]  md:w-full sm:py-[15px]  xs:flex xs:gap-2 xs:justify-center xs:py-[10px] rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem]  focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm w-full sm:w-full text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 "
                 >
-                  <img src="/images/messageIcon.svg" />
+                  <img src="/images/messageIcon.svg" alt="" />
                   <p className="font-semibold	">Subscribe</p>
                 </button>
 
@@ -420,7 +502,7 @@ const HomeComponent = () => {
                   type="submit"
                   className=" gap-2 absolute lg:flex md:hidden sm:hidden xs:hidden left-[12rem] rounded-3xl text-white bg-purple-600 hover:bg-purple-600 hover:px-[4.5rem]  focus:ring-4 focus:outline-none focus:ring-purple-700  text-sm w-full sm:w-auto px-16 py-[21px] text-center dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:bg-purple-600 duration-500 "
                 >
-                  <img src="/images/messageIcon.svg" />
+                  <img src="/images/messageIcon.svg" alt="" />
                   <p className="font-semibold	">Subscribe</p>
                 </button>
               </form>

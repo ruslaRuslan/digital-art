@@ -1,20 +1,46 @@
-import Data from "../../Data.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import NavLinkComponents from "../NavLinkComponents";
 import NavLinkForPhoneComponents from "../NavLinkForPhoneComponents";
+import { getExplore, getImageMarketplease } from "../../utils/url";
+
+interface Ixplore {
+  id: number;
+  title: string;
+  href: string;
+  images: string;
+}
+interface IGetImageMarketplease {
+  id: number;
+  image: string;
+}
 
 export default function Example(): JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [explore, setExplore] = useState<Ixplore[]>([]);
+  const [imageMarketplease, setImageMarketplease] = useState<
+    IGetImageMarketplease[]
+  >([]);
+
+  useEffect(() => {
+    getExplore().then((data) => {
+      setExplore(data);
+    });
+    getImageMarketplease().then((data) => {
+      setImageMarketplease(data);
+    });
+  }, []);
 
   return (
     <header className="mt-[10px] bg-[#2B2B2B] text-[#fff]">
       <nav className="container px-10">
         <div className="flex items-center justify-between">
           <div className="flex">
-            <img src={Data.imageMarketplease} alt="" className="h-[45px]" />
-            {Data.explore.slice(0, 1).map((element) => {
+            {imageMarketplease.map(({ id, image }) => {
+              return <img key={id} src={image} alt="" className="h-[45px]" />;
+            })}
+            {explore.slice(0, 1).map((element) => {
               return (
                 <NavLinkComponents key={element.id} to={element.href}>
                   {element.title}
@@ -24,11 +50,11 @@ export default function Example(): JSX.Element {
           </div>
           <div className="min-[0px]:hidden md:hidden lg:block sm:hidden">
             <div className="flex gap-10 relative">
-              {Data.explore.slice(1).map(({ id, title, href, images }) => {
+              {explore.slice(1).map(({ id, title, href, images }) => {
                 return (
                   <NavLinkComponents key={id} to={href}>
                     <div className="flex">
-                      <img src={images} />
+                      <img src={images} alt="" />
                       <p>{title}</p>
                     </div>
                   </NavLinkComponents>
@@ -49,9 +75,9 @@ export default function Example(): JSX.Element {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h7"
                 />
               </svg>
@@ -74,15 +100,20 @@ export default function Example(): JSX.Element {
         >
           <div className="flex items-center justify-between">
             <div className="-m-1.5 p-1.5 flex items-center gap-1  ">
-              <img
-                alt=""
-                src={Data.imageMarketplease}
-                className="h-8 w-auto md:hidden sm:hidden"
-              />
-              {Data.explore.slice(0, 1).map((element) => {
+              {imageMarketplease.map(({ id, image }) => {
                 return (
-                  <div key={element.id}>
-                    <a href={element.href}>{element.title}</a>
+                  <img
+                    key={id}
+                    src={image}
+                    alt=""
+                    className="h-8 w-auto md:hidden sm:hidden"
+                  />
+                );
+              })}
+              {explore.slice(0, 1).map(({ id, href, title }) => {
+                return (
+                  <div key={id}>
+                    <a href={href}>{title}</a>
                   </div>
                 );
               })}
@@ -99,11 +130,11 @@ export default function Example(): JSX.Element {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className=" flex flex-col mt-7">
-                {Data.explore.slice(1).map(({ id, title, href, images }) => {
+                {explore.slice(1).map(({ id, title, href, images }) => {
                   return (
                     <NavLinkForPhoneComponents key={id} to={href}>
                       <div className="flex">
-                        <img src={images} />
+                        <img src={images} alt="" />
                         <p>{title}</p>
                       </div>
                     </NavLinkForPhoneComponents>
