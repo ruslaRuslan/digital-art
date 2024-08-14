@@ -133,7 +133,10 @@ export default function Example(): JSX.Element {
                 {explore.slice(1).map(({ id, title, href, images }) => {
                   return (
                     <NavLinkForPhoneComponents key={id} to={href}>
-                      <div className="flex">
+                      <div
+                        className="flex"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
                         <img src={images} alt="" />
                         <p>{title}</p>
                       </div>
