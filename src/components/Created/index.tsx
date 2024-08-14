@@ -2,7 +2,7 @@ const TodayComponent2 = ({ props }: any) => {
   return (
     <>
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-        <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-3   md:grid-cols-2 md:grid-rows-6 sm:grid-cols-1 xs:grid-cols-1 gap-16">
+        <div className="container justify-center m-auto grid lg:grid-cols-3 lg:grid-rows-3   md:grid-cols-2  sm:grid-cols-1 xs:grid-cols-1 gap-16">
           {props.map(
             ({
               id,
