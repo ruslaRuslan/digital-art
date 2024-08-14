@@ -173,7 +173,7 @@ const HomeComponent = () => {
                       return (
                         <div key={id}>
                           <p className="font-bold">{count}</p>
-                          <p className="text-[red] bg-black h-[50%]">{title}</p>
+                          <p>{title}</p>
                         </div>
                       );
                     })}
