@@ -2,7 +2,6 @@ import { useState } from "react";
 import { TabsDefaultComponent3 } from "../TabsDefaultComponent3";
 const MarketPleaseComponent = () => {
   const [search, setSearch] = useState<string>();
-
   return (
     <>
       <header className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 ">
@@ -27,10 +26,7 @@ const MarketPleaseComponent = () => {
               />
               <button
                 type="submit"
-                className="
-                
-                
-                absolute rounded-r-[1rem] top-0 end-0 p-2.5 h-full text-sm font-medium text-white  rounded-e-lg border border-r-[#3B3B3B] border-b-[#3B3B3B] border-t-[#3B3B3B] border-l-[transparent] focus:outline-none "
+                className="absolute rounded-r-[1rem] top-0 end-0 p-2.5 h-full text-sm font-medium text-white  rounded-e-lg border border-r-[#3B3B3B] border-b-[#3B3B3B] border-t-[#3B3B3B] border-l-[transparent] focus:outline-none "
               >
                 <svg
                   className="w-4 h-4"

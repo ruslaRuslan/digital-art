@@ -71,11 +71,11 @@ export function TabsDefaultComponent3({ search }: { search: string }) {
           <TabPanel
             key={value}
             value={value}
-            className="text-[#fff] bg-[#3B3B3B] "
+            className="text-[#fff] bg-[#3B3B3B]"
           >
             <Created2
-              props={desc.filter((el) =>
-                search ? el.title.toLowerCase().startsWith(search) : true
+              props={desc.filter((element) =>
+                search ? element.title.toLowerCase().startsWith(search) : true
               )}
             />
           </TabPanel>

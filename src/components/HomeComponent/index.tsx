@@ -406,7 +406,7 @@ const HomeComponent = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="2000"
                 >
-                  <Countdown endTime={new Date(2024, 8, 1)} />
+                  <Countdown endTime={new Date(2024, 8, 28)} />
                 </div>
               </div>
               <div className="flex lg:hidden md:hidden xs:flex mb-6">
